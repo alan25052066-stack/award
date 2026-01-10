@@ -8,53 +8,97 @@
 </head>
 <body>
 
-  <!-- 第一关：火影忍者 -->
-  <section class="level-section" style="background-image: url('assets/naruto-bg.png')">
+  <!-- 第一关：火影忍者（连打） -->
+  <section id="naruto-section" class="level-section" data-unlocked="true"
+           style="background-image: url('assets/naruto-bg.png')">
     <div class="level-content">
-      <h2>🔥 火影忍者挑战</h2>
-      <p>完成5个任务，获得木叶护额！</p>
-      <button class="btn">开始挑战</button>
+      <h2>火影忍者挑战</h2>
+      <div class="challenge-desc">
+        <p>完成5个任务，获得木叶护额！</p>
+        <button class="btn start-btn">开始挑战</button>
+      </div>
+      <div class="challenge-game hidden">
+        <p>快速点击按钮 20 次！</p>
+        <button id="naruto-btn" class="game-btn">连打！</button>
+        <div id="naruto-counter">连打: 0 / 20</div>
+      </div>
     </div>
   </section>
 
-  <!-- 第二关：原神 -->
-  <section class="level-section" style="background-image: url('assets/genshin-bg.png')">
+  <!-- 第二关：原神（滑动收集） -->
+  <section id="genshin-section" class="level-section"
+           style="background-image: url('assets/genshin-bg.png')">
     <div class="level-content">
       <h2>⚔️ 原神冒险</h2>
-      <p>探索提瓦特，击败深渊法师！</p>
-      <button class="btn">开始挑战</button>
+      <div class="challenge-desc">
+        <p>探索提瓦特，击败深渊法师！</p>
+        <button class="btn start-btn" disabled>请先完成上一关</button>
+      </div>
+      <div class="challenge-game hidden">
+        <p>在区域内滑动收集神瞳（5次）</p>
+        <div id="genshin-area" class="swipe-area"></div>
+        <div id="genshin-counter">已收集: 0 / 5</div>
+      </div>
     </div>
   </section>
 
-  <!-- 第三关：CS2 -->
-  <section class="level-section" style="background-image: url('assets/cs2-bg.png')">
+  <!-- 第三关：CS2（手机摇晃） -->
+  <section id="cs2-section" class="level-section"
+           style="background-image: url('assets/cs2-bg.png')">
     <div class="level-content">
-      <h2>反恐精英行动</h2>
-      <p>赢得10局竞技模式！</p>
-      <button class="btn">开始挑战</button>
+      <h2>💀 反恐精英行动</h2>
+      <div class="challenge-desc">
+        <p>赢得10局竞技模式！</p>
+        <button class="btn start-btn" disabled>请先完成上一关</button>
+      </div>
+      <div class="challenge-game hidden">
+        <p>拿起手机，用力摇晃！（需手机）</p>
+        <div id="cs2-shake">颠簸: 0 / 10</div>
+        <p class="hint">PC用户可点击下方模拟</p>
+        <button id="cs2-simulate" class="btn">模拟摇晃</button>
+      </div>
     </div>
   </section>
 
-  <!-- 第四关：三角洲行动 -->
-  <section class="level-section" style="background-image: url('assets/delta-bg.png')">
+  <!-- 第四关：三角洲行动（快速点击） -->
+  <section id="delta-section" class="level-section"
+           style="background-image: url('assets/delta-bg.png')">
     <div class="level-content">
-      <h2>三角洲行动</h2>
-      <p>完成“黑鹰坠落”战役，营救所有干员！</p>
-      <button class="btn">开始挑战</button>
+      <h2> 三角洲行动</h2>
+      <div class="challenge-desc">
+        <p>完成“黑鹰坠落”战役，营救所有干员！</p>
+        <button class="btn start-btn" disabled>请先完成上一关</button>
+      </div>
+      <div class="challenge-game hidden">
+        <p>疯狂点击按钮 10 次！</p>
+        <button id="delta-btn" class="game-btn">快点我！</button>
+        <div id="delta-counter">点击: 0 / 10</div>
+      </div>
     </div>
   </section>
 
-  <!-- 第五关：泰拉瑞亚 -->
-  <section class="level-section" style="background-image: url('assets/terraria-bg.png')">
+  <!-- 第五关：泰拉瑞亚（长按挖掘） -->
+  <section id="terraria-section" class="level-section"
+           style="background-image: url('assets/terraria-bg.png')">
     <div class="level-content">
-      <h2>泰拉瑞亚世界</h2>
-      <p>击败史莱姆之王</p>
-      <button class="btn">开始挑战</button>
+      <h2>⛏️ 泰拉瑞亚世界</h2>
+      <div class="challenge-desc">
+        <p>击败史莱姆之王</p>
+        <button class="btn start-btn" disabled>请先完成上一关</button>
+      </div>
+      <div class="challenge-game hidden">
+        <p>长按按钮挖矿（0.5秒）</p>
+        <button id="terraria-btn" class="game-btn hold-btn">长按挖矿</button>
+        <div class="progress-bar">
+          <div id="terraria-progress"></div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- 最终关：星野颁奖典礼（铁腚奖） -->
-  <section id="final-award-section" style="background-image: url('assets/hoshino-stage-bg.png')">
+  <!-- 最终关：星野颁奖典礼 -->
+  <section id="final-award-section" class="level-section"
+           style="background-image: url('assets/hoshino-stage-bg.png')">
     <div class="level-content award-content">
       <h2>小鸟游星野 · 颁奖典礼</h2>
       <div class="award-icon">
@@ -63,8 +107,12 @@
       <p>恭喜你完成全部挑战！<br>荣获阿拜多斯对策委员会最高荣誉——</p>
       <h3>铁腚奖（Iron Butt Award）</h3>
       <p>“坐得住、打得赢、肝得动”</p>
+      <div id="award-message" class="hidden">
+        <p>全关卡已完成！</p>
+      </div>
     </div>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
