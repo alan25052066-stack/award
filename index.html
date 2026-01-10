@@ -9,13 +9,14 @@
 <body>
     <!-- 启动页 -->
     <div id="start-screen" class="screen">
-        <h1>🎮 全能玩家终极试炼</h1>
+        <h1>全能玩家终极试炼</h1>
         <p>通关 5 大游戏挑战，赢取星野亲授奖章！</p>
         <button onclick="startGame()">开始挑战</button>
     </div>
 
     <!-- 三角洲：快速点击 -->
     <div id="delta-screen" class="screen hidden">
+        <img src="assets/delta.png" alt="三角洲" class="game-icon">
         <h2>【三角洲行动】急停开镜训练</h2>
         <p>3 秒内点击 <strong>10 次</strong>！</p>
         <button id="delta-btn" class="game-btn">快点我！</button>
@@ -24,6 +25,7 @@
 
     <!-- CS2：摇一摇 -->
     <div id="cs2-screen" class="screen hidden">
+        <img src="assets/cs2.png" alt="CS2" class="game-icon">
         <h2>【CS2】跳狙颠簸模拟</h2>
         <p>剧烈摇晃手机，完成 <strong>10 次颠簸</strong></p>
         <div class="shake-indicator" id="cs2-shake">颠簸: 0/10</div>
@@ -31,6 +33,7 @@
 
     <!-- 泰拉瑞亚：长按挖掘 -->
     <div id="terraria-screen" class="screen hidden">
+        <img src="assets/terraria.png" alt="泰拉瑞亚" class="game-icon">
         <h2>【泰拉瑞亚】地狱挖矿</h2>
         <p>长按按钮 <strong>5 秒</strong>，挖出永夜刃！</p>
         <button id="terraria-btn" class="hold-btn">按住挖掘</button>
@@ -39,6 +42,7 @@
 
     <!-- 火影：连打 -->
     <div id="naruto-screen" class="screen hidden">
+        <img src="assets/naruto.png" alt="鸣人" class="game-icon">
         <h2>【火影忍者】奥义连打</h2>
         <p>5 秒内狂点 <strong>20 次</strong>！</p>
         <button id="naruto-btn" class="game-btn">搓招！</button>
@@ -47,9 +51,10 @@
 
     <!-- 原神：滑动收集 -->
     <div id="genshin-screen" class="screen hidden">
+        <img src="assets/genshin.png" alt="原神" class="game-icon">
         <h2>【原神】收集神瞳</h2>
         <p>在屏幕上 <strong>滑动 5 次</strong> 收集散落的神瞳</p>
-        <div id="genshin-area">👆 滑动这里</div>
+        <div id="genshin-area"> 滑动这里</div>
         <div id="genshin-counter">已收集: 0/5</div>
     </div>
 
@@ -58,9 +63,9 @@
         <div class="certificate">
             <img src="assets/hoshino.png" alt="星野" class="character-icon">
             <h1>【全能铁腚王】SSS级认证</h1>
-            <p>授予：<strong>超娃子</strong></p>
+            <p>授予：<strong>你的兄弟名字</strong></p>
             <p>成功通关全部 5 大游戏耐力试炼！</p>
-            <small>“Sensei，你的腚真的超厉害……”</small>
+            <small>“Sensei，你真的超厉害……”</small>
         </div>
         <button onclick="location.reload()">再玩一次</button>
     </div>
