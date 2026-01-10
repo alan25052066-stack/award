@@ -1,83 +1,138 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    text-align: center;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: white;
-    overflow: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.screen {
-    padding: 40px 20px;
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+    color: white;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
 }
-.hidden { display: none; }
+
+.screen {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #4dff4d;
+}
+
+p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
 
 button {
-    padding: 15px 40px;
-    margin: 20px 0;
-    font-size: 18px;
-    background: linear-gradient(45deg, #ff6b6b, #ffa500);
+    background: #ff6b6b;
     color: white;
     border: none;
+    padding: 14px 24px;
+    font-size: 1.1em;
     border-radius: 50px;
     cursor: pointer;
-    font-weight: bold;
+    margin-top: 20px;
+    transition: all 0.2s;
 }
-button:active { transform: scale(0.95); }
 
-.game-btn {
-    width: 200px;
-    height: 200px;
+button:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+.game-icon {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto 16px;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+}
+
+.character-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 20px;
     border-radius: 50%;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid #ffcc00;
+}
+
+.game-btn, .hold-btn {
+    background: #4dabf7;
+    width: 100%;
+    padding: 16px;
+    font-size: 1.2em;
+}
+
+#delta-counter,
+#naruto-counter,
+#genshin-counter,
+#cs2-shake {
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #ffd43b;
 }
 
 .progress-bar {
-    width: 80%;
-    height: 20px;
+    width: 100%;
+    height: 12px;
     background: #333;
-    border-radius: 10px;
-    margin-top: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
     overflow: hidden;
 }
+
 .progress-fill {
     height: 100%;
+    background: linear-gradient(to right, #4caf50, #8bc34a);
     width: 0%;
-    background: #00ffcc;
-    transition: width 0.1s linear;
+    transition: width 0.1s;
 }
 
 #genshin-area {
-    width: 90%;
-    height: 150px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    user-select: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 15px 0;
+    font-size: 1.1em;
 }
 
 .certificate {
-    background: linear-gradient(45deg, #0f3460, #523d7a, #a95c68);
-    padding: 30px;
-    border-radius: 20px;
-    max-width: 500px;
-    text-align: center;
-    box-shadow: 0 0 30px rgba(173, 216, 230, 0.3);
+    animation: pulse 2s infinite;
 }
-.character-icon {
-    width: 140px;
-    height: auto;
-    border-radius: 15px;
-    margin: 20px 0;
-    box-shadow: 0 0 20px rgba(255, 182, 193, 0.7);
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+    color: #aaa;
+    font-style: italic;
 }
