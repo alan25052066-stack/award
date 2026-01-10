@@ -11,8 +11,7 @@ body {
   padding-bottom: 60px;
 }
 
-.level-section,
-#final-award-section {
+.level-section {
   width: 100%;
   min-height: 600px;
   background-size: cover;
@@ -26,6 +25,11 @@ body {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.4s ease;
+}
+
+.level-section.unlocked {
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
 }
 
 .level-content {
@@ -58,59 +62,94 @@ body {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 14px 40px;
-  font-size: 1.2rem;
+  padding: 12px 30px;
+  font-size: 1.1rem;
   border-radius: 50px;
   cursor: pointer;
-  transition: all 0.3s ease;
   font-weight: bold;
   margin-top: 10px;
+  transition: all 0.2s;
 }
-.btn:hover {
+.btn:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-/* 最终颁奖区特殊样式 */
-#final-award-section {
-  min-height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.start-btn {
+  background: linear-gradient(45deg, #ff6b6b, #ffa500);
+  border: none;
 }
 
+.game-btn {
+  background: rgba(0, 200, 255, 0.3);
+  border: 1px solid rgba(0, 200, 255, 0.6);
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.hold-btn {
+  padding: 16px 50px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* 原神滑动区 */
+.swipe-area {
+  width: 200px;
+  height: 100px;
+  margin: 15px auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* 泰拉瑞亚进度条 */
+.progress-bar {
+  width: 200px;
+  height: 12px;
+  background: #333;
+  border-radius: 6px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+#terraria-progress {
+  height: 100%;
+  background: linear-gradient(to right, gold, orange);
+  width: 0%;
+  transition: width 0.1s;
+}
+
+/* 颁奖区 */
 .award-content {
   padding: 50px;
 }
-
 .award-icon img {
   width: 120px;
   height: auto;
   margin: 20px 0;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.8));
 }
-
-#final-award-section h3 {
-  font-size: 2rem;
+#award-message {
+  margin-top: 20px;
+  font-size: 1.4rem;
   color: gold;
-  margin: 15px 0;
-  text-shadow: 0 0 10px rgba(255, 200, 0, 0.7);
 }
 
 /* 手机适配 */
 @media (max-width: 768px) {
-  .level-section,
-  #final-award-section {
-    min-height: 500px;
-    margin: 30px 10px;
-    padding: 60px 15px;
-  }
-  .level-content {
-    padding: 25px 20px;
-  }
+  .level-section { min-height: 500px; margin: 30px 10px; padding: 60px 15px; }
+  .level-content { padding: 25px 20px; }
   .level-content h2 { font-size: 1.8rem; }
   .level-content p { font-size: 1.1rem; }
-  .btn { padding: 12px 30px; font-size: 1.1rem; }
-  #final-award-section h3 { font-size: 1.6rem; }
+  .btn { padding: 10px 25px; font-size: 1rem; }
+  .swipe-area { width: 160px; height: 80px; }
+  .progress-bar { width: 160px; }
 }
