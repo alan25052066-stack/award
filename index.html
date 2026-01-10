@@ -1,12 +1,37 @@
 <!DOCTYPE html>
+
 <html lang="zh-CN">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>游戏挑战系统 · 铁腚奖</title>
+
+  <title>40小时硬座挑战</title>
+
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
+
+
+  <!-- 首页 -->
+
+  <section id="home-section" class="level-section home-section">
+
+    <div class="level-content">
+
+      <h2>40小时硬座挑战</h2>
+
+      <p>准备好了吗？点击下方按钮开始挑战！</p>
+
+      <button id="start-btn" class="btn">开始挑战</button>
+
+    </div>
+
+  </section>
 
   <!-- 第一关：火影忍者（连打） -->
   <section id="naruto-section" class="level-section" data-unlocked="true" data-bg="naruto-bg.png">
@@ -92,23 +117,36 @@
   </section>
 
   <!-- 最终关：星野颁奖典礼 -->
+
   <section id="final-award-section" class="level-section" data-bg="hoshino-stage-bg.png">
+
     <div class="level-content award-content">
+
       <h2>小鸟游星野 · 颁奖典礼</h2>
+
       <div class="award-icon">
+
         <img src="award-iron-butt.png" alt="铁腚奖" />
+
       </div>
+
       <p>恭喜你完成全部挑战！<br>荣获阿拜多斯对策委员会最高荣誉——</p>
+
       <h3>铁腚奖（Iron Butt Award）</h3>
+
       <p>“坐得住、打得赢、肝得动”</p>
-      <p class="hard-seat-msg">🚄 恭喜你坐硬座40小时！</p>
-      <div id="award-message" class="hidden">
-        <p>全关卡已完成！</p>
-      </div>
+
+      <p class="hard-seat-msg">恭喜你坐硬座40小时！</p>
+
       <button id="restart-btn" class="btn restart-btn">重新开始</button>
+
     </div>
+
   </section>
 
+
   <script src="script.js"></script>
+
 </body>
+
 </html>
