@@ -1,138 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  color: white;
+  background: #000;
+  padding-bottom: 60px;
 }
 
-.screen {
-    width: 100%;
-    max-width: 500px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+.level-section,
+#final-award-section {
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+  position: relative;
+  padding: 80px 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-.hidden {
-    display: none !important;
+.level-content {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    color: #ffcc00;
+.level-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-h2 {
-    font-size: 1.4em;
-    margin: 15px 0;
-    color: #4dff4d;
+.level-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 15px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-p {
-    margin: 12px 0;
-    line-height: 1.5;
+.btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-button {
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 14px 24px;
-    font-size: 1.1em;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: all 0.2s;
+/* 最终颁奖区特殊样式 */
+#final-award-section {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-button:hover {
-    background: #ff5252;
-    transform: scale(1.05);
+.award-content {
+  padding: 50px;
 }
 
-.game-icon {
-    width: 64px;
-    height: 64px;
-    display: block;
-    margin: 0 auto 16px;
-    image-rendering: -webkit-crisp-edges;
-    image-rendering: pixelated;
+.award-icon img {
+  width: 120px;
+  height: auto;
+  margin: 20px 0;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.8));
 }
 
-.character-icon {
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    border: 2px solid #ffcc00;
+#final-award-section h3 {
+  font-size: 2rem;
+  color: gold;
+  margin: 15px 0;
+  text-shadow: 0 0 10px rgba(255, 200, 0, 0.7);
 }
 
-.game-btn, .hold-btn {
-    background: #4dabf7;
-    width: 100%;
-    padding: 16px;
-    font-size: 1.2em;
-}
-
-#delta-counter,
-#naruto-counter,
-#genshin-counter,
-#cs2-shake {
-    margin-top: 15px;
-    font-size: 1.1em;
-    color: #ffd43b;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 12px;
-    background: #333;
-    border-radius: 6px;
-    margin: 20px 0;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(to right, #4caf50, #8bc34a);
-    width: 0%;
-    transition: width 0.1s;
-}
-
-#genshin-area {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-    font-size: 1.1em;
-}
-
-.certificate {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.02); }
-}
-
-small {
-    display: block;
-    margin-top: 15px;
-    color: #aaa;
-    font-style: italic;
+/* 手机适配 */
+@media (max-width: 768px) {
+  .level-section,
+  #final-award-section {
+    min-height: 500px;
+    margin: 30px 10px;
+    padding: 60px 15px;
+  }
+  .level-content {
+    padding: 25px 20px;
+  }
+  .level-content h2 { font-size: 1.8rem; }
+  .level-content p { font-size: 1.1rem; }
+  .btn { padding: 12px 30px; font-size: 1.1rem; }
+  #final-award-section h3 { font-size: 1.6rem; }
 }
