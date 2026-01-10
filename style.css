@@ -5,151 +5,127 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  font-family: "Microsoft YaHei", sans-serif;
   color: white;
-  background: #000;
-  padding-bottom: 60px;
+  overflow-x: hidden;
 }
 
 .level-section {
-  width: 100%;
-  min-height: 600px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f1a; /* 默认底色，防白屏 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000;
-  position: relative;
-  padding: 80px 20px;
-  margin: 50px auto;
-  max-width: 1200px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.4s ease;
-}
-
-.level-section.unlocked {
-  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
+  padding: 20px;
+  scroll-snap-align: start;
 }
 
 .level-content {
-  max-width: 700px;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  padding: 40px;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
 }
 
-.level-content h2 {
-  font-size: 2.4rem;
+h2 {
+  font-size: 2.2rem;
   margin-bottom: 20px;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  color: #ffcc00;
 }
 
-.level-content p {
-  font-size: 1.3rem;
+p {
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin: 15px 0;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  margin: 10px 0;
 }
 
 .btn {
-  background: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(45deg, #ff6b6b, #ffa500);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 12px 30px;
+  border: none;
+  padding: 12px 24px;
   font-size: 1.1rem;
-  border-radius: 50px;
+  border-radius: 8px;
   cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  transition: all 0.2s;
+  margin-top: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.btn:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-}
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
 }
 
 .start-btn {
-  background: linear-gradient(45deg, #ff6b6b, #ffa500);
-  border: none;
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
 }
 
 .game-btn {
-  background: rgba(0, 200, 255, 0.3);
-  border: 1px solid rgba(0, 200, 255, 0.6);
-  padding: 14px 40px;
-  font-size: 1.2rem;
-  margin: 15px 0;
-}
-
-.hold-btn {
-  padding: 16px 50px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  padding: 15px 30px;
+  font-size: 1.3rem;
 }
 
 .hidden {
   display: none !important;
 }
 
-/* 原神滑动区 */
 .swipe-area {
   width: 200px;
   height: 100px;
-  margin: 15px auto;
   background: rgba(255, 255, 255, 0.1);
-  border: 2px dashed rgba(255, 255, 255, 0.3);
-  border-radius: 12px;
+  margin: 20px auto;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-/* 泰拉瑞亚进度条 */
 .progress-bar {
-  width: 200px;
-  height: 12px;
+  width: 100%;
+  height: 10px;
   background: #333;
-  border-radius: 6px;
-  margin: 15px auto;
+  border-radius: 5px;
+  margin: 20px 0;
   overflow: hidden;
 }
+
 #terraria-progress {
   height: 100%;
-  background: linear-gradient(to right, gold, orange);
   width: 0%;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
   transition: width 0.1s;
 }
 
-/* 颁奖区 */
 .award-content {
-  padding: 50px;
-}
-.award-icon img {
-  width: 120px;
-  height: auto;
-  margin: 20px 0;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.8));
-}
-#award-message {
-  margin-top: 20px;
-  font-size: 1.4rem;
-  color: gold;
+  max-width: 700px;
 }
 
-/* 手机适配 */
-@media (max-width: 768px) {
-  .level-section { min-height: 500px; margin: 30px 10px; padding: 60px 15px; }
-  .level-content { padding: 25px 20px; }
-  .level-content h2 { font-size: 1.8rem; }
-  .level-content p { font-size: 1.1rem; }
-  .btn { padding: 10px 25px; font-size: 1rem; }
-  .swipe-area { width: 160px; height: 80px; }
-  .progress-bar { width: 160px; }
+.award-icon img {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.hard-seat-msg {
+  font-size: 1.5rem;
+  color: #ffcc00;
+  margin-top: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.restart-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  margin-top: 20px;
+  padding: 12px 36px;
+  font-size: 1.2rem;
+}
+
+.restart-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(37, 117, 252, 0.6);
 }
