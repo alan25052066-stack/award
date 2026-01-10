@@ -1,104 +1,171 @@
+/* =============== 全局重置与基础 =============== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* 平滑滚动到下一关 */
+}
+
 body {
-  font-family: "Microsoft YaHei", sans-serif;
+  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
   color: white;
+  background-color: #0a0a12;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
+/* =============== 通用区块样式 =============== */
 .level-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0f0f1a; /* 默认底色，防白屏 */
+  padding: 20px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20px;
-  scroll-snap-align: start;
-}
-
-.home-section {
-  text-align: center;
-  max-width: 600px;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 30px;
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
+  position: relative;
 }
 
 .level-content {
   text-align: center;
-  max-width: 600px;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 30px;
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
+  max-width: 650px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 35px 25px;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-h2 {
-  font-size: 2.2rem;
+.level-content h2 {
+  font-size: 2.3rem;
   margin-bottom: 20px;
   color: #ffcc00;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin: 10px 0;
+.level-content p {
+  font-size: 1.25rem;
+  margin: 12px 0;
+  line-height: 1.7;
 }
 
+/* =============== 首页样式 =============== */
+.home-section {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.home-section .level-content {
+  background: rgba(10, 15, 30, 0.9);
+  padding: 50px 30px;
+  border: 2px solid #ffcc00;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-section h2 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin-bottom: 25px;
+  background: linear-gradient(to right, #ffcc00, #ff6b6b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+.home-section p {
+  font-size: 1.4rem;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* =============== 按钮通用样式 =============== */
 .btn {
+  display: inline-block;
   background: linear-gradient(45deg, #ff6b6b, #ffa500);
   color: white;
   border: none;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 50px;
   cursor: pointer;
-  margin-top: 15px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
 }
 
-.start-btn {
+.btn:active {
+  transform: translateY(0);
+}
+
+.start-btn,
+.restart-btn {
   background: linear-gradient(45deg, #4facfe, #00f2fe);
+  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+}
+
+.start-btn:hover,
+.restart-btn:hover {
+  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
+}
+
+.restart-btn {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+}
+
+.restart-btn:hover {
+  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.6);
+}
+
+/* =============== 游戏区域 =============== */
+.challenge-game {
+  margin-top: 25px;
 }
 
 .game-btn {
   background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  padding: 15px 30px;
+  padding: 16px 40px;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+#naruto-counter,
+#terraria-counter {
   font-size: 1.3rem;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.swipe-area {
-  width: 200px;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 20px auto;
-  border-radius: 10px;
-  cursor: pointer;
+  margin-top: 15px;
+  color: #aaffaa;
 }
 
 .progress-bar {
-  width: 100%;
-  height: 10px;
+  height: 16px;
   background: #333;
-  border-radius: 5px;
-  margin: 20px 0;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 400px;
   overflow: hidden;
 }
 
@@ -106,36 +173,95 @@ p {
   height: 100%;
   width: 0%;
   background: linear-gradient(to right, #00c9ff, #92fe9d);
-  transition: width 0.1s;
+  transition: width 0.3s ease;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* =============== 颁奖页面（星野） =============== */
+#final-award-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('hoshino-stage-bg.png') !important;
 }
 
 .award-content {
-  max-width: 700px;
-  margin-top: 100px; /* 下移文本框 */
+  margin-top: 120px; /* 关键：把内容整体下移，避开星野上半身 */
 }
 
 .award-icon img {
-  width: 120px;
-  margin: 20px 0;
+  width: 140px;
+  margin: 25px 0;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+}
+
+#final-award-section h3 {
+  font-size: 2rem;
+  color: gold;
+  margin: 15px 0;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
 }
 
 .hard-seat-msg {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #ffcc00;
-  margin-top: 20px;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  margin-top: 25px;
   font-weight: bold;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
 }
 
-.restart-btn {
-  background: linear-gradient(45deg, #6a11cb, #2575fc);
-  border: none;
-  margin-top: 20px;
-  padding: 12px 36px;
-  font-size: 1.2rem;
+/* =============== 响应式：手机适配 =============== */
+@media (max-width: 768px) {
+  .level-content {
+    padding: 25px 15px;
+  }
+
+  .home-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .home-section p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 12px 28px;
+    font-size: 1.15rem;
+  }
+
+  .game-btn {
+    padding: 14px 30px;
+    font-size: 1.25rem;
+  }
+
+  .award-content {
+    margin-top: 100px; /* 手机上稍微少一点 */
+  }
+
+  #final-award-section h3 {
+    font-size: 1.7rem;
+  }
+
+  .hard-seat-msg {
+    font-size: 1.4rem;
+  }
 }
 
-.restart-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(37, 117, 252, 0.6);
+@media (max-width: 480px) {
+  .home-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .btn {
+    padding: 10px 24px;
+    font-size: 1.1rem;
+  }
+
+  .level-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .award-content {
+    margin-top: 90px;
+  }
 }
