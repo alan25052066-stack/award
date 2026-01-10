@@ -1,0 +1,83 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    overflow: hidden;
+}
+.screen {
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hidden { display: none; }
+
+button {
+    padding: 15px 40px;
+    margin: 20px 0;
+    font-size: 18px;
+    background: linear-gradient(45deg, #ff6b6b, #ffa500);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:active { transform: scale(0.95); }
+
+.game-btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 20px;
+    background: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #00ffcc;
+    transition: width 0.1s linear;
+}
+
+#genshin-area {
+    width: 90%;
+    height: 150px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    user-select: none;
+}
+
+.certificate {
+    background: linear-gradient(45deg, #0f3460, #523d7a, #a95c68);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(173, 216, 230, 0.3);
+}
+.character-icon {
+    width: 140px;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.7);
+}

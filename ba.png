@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="client-nojs skin-theme-clientpref-day" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Main Page - Blue Archive Wiki</title>
+<script>(function(){var className="client-js skin-theme-clientpref-day";var cookie=document.cookie.match(/(?:^|; )bluearchivewikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"c301eebbe19b957b6670cad5","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Main_Page","wgTitle":"Main Page","wgCurRevisionId":99814,"wgRevisionId":99814,"wgArticleId":6,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Pages using DynamicPageList4 parser tag","Pages using DynamicPageList4"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Main_Page","wgRelevantArticleId":6,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionEdit":["sysop"],"wgRestrictionMove":["sysop"],"wgIsMainPage":true,"wgCargoDefaultQueryLimit":100,"wgCargoMapClusteringMinimum":80,"wgCargoMonthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":false,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsDelayReload":false,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/1.44/extensions/PageForms","edgValues":[],"wgPageFormsEDSettings":null,"wgAmericanDates":false,"wgNoticeProject":"optout","wgCiteReferencePreviewsActive":false,"wgMFDisplayWikibaseDescriptions":{"search":false,"nearby":false,"watchlist":false,"tagline":false},"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgIsMobile":false,"wgEditSubmitButtonLabelPublish":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","ext.gadget.FrontPage":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","skins.vector.styles.legacy":"ready","ext.CookieWarning.styles":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","ext.MobileDetect.nomobile":"ready","ext.DarkMode.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"};RLPAGEMODULES=["ext.tabs","site","mediawiki.page.ready","skins.vector.legacy.js","ext.SimpleTooltip","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.checkUser.clientHints","ext.CookieWarning","ext.echo.centralauth","ext.eventLogging","ext.DarkMode","ext.urlShortener.toolbar","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","mmv.bootstrap","ext.gadget.ReferenceTooltips","ext.gadget.MemLobby","ext.centralauth.centralautologin","ext.purge"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.CookieWarning.styles%7Cext.DarkMode.styles%7Cext.MobileDetect.nomobile%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.gadget.FrontPage&amp;only=styles&amp;skin=vector">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector">
+<meta name="generator" content="MediaWiki 1.44.3">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Blue Archive Wiki for ブルーアーカイブ,a free-to-play mobile game developed by Nexon Games.">
+<meta name="keywords" content="Blue Archive,Wiki,ブルーアーカイブ,buruaka,ブルアカ">
+<meta name="twitter:site" content="">
+<meta name="twitter:card" content="summary">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Main Page - Blue Archive Wiki">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//static.wikitide.net">
+<link rel="apple-touch-icon" href="https://static.miraheze.org/bluearchivewiki/9/95/Favicon_arona.png">
+<link rel="icon" href="https://static.miraheze.org/bluearchivewiki/9/95/Favicon_arona.png">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Blue Archive Wiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://bluearchive.wiki/w/api.php?action=rsd">
+<link rel="canonical" href="https://bluearchive.wiki/wiki/Main_Page">
+<link rel="alternate" type="application/atom+xml" title="Blue Archive Wiki Atom feed" href="/wiki/Special:RecentChanges?feed=atom">
+<style type="text/css" id="tabs-dynamic-styles">/*<![CDATA[*/
+/* Dynamically generated tabs styles */
+.tabs-input-1:checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1:checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1:checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2:checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0:checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+/* The same styles, but with .checked instead of :checked, for browsers that rely on the JavaScript fallback */
+.tabs-input-1.checked ~ .tabs-container .tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-content-1 {display:inline-block;}
+.tabs-input-1.checked ~ .tabs-container .tabs-inline.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-inline.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-inline.tabs-content-1 {display:inline;}
+.tabs-input-1.checked ~ .tabs-container .tabs-block.tabs-content-1,
+.tabs-input-2.checked ~ .tabs-container .tabs-block.tabs-content-2,
+.tabs-input-0.checked ~ .tabs-container .tabs-block.tabs-content-1 {display:block;}
+.tabs-dropdown .tabs-content,.tabs-dropdown .tabs-container,.tabs-dropdown li,.tabs-dropdown ul,.tabs-dropdown ol {background-color: white /* Malicious data in tabs-dropdown-bgcolor */}
+/*]]>*/</style>
+<link rel="dns-prefetch" href="https://meta.miraheze.org" />
+<meta property="og:title" content="Blue Archive Wiki">
+<meta property="og:site_name" content="Blue Archive Wiki">
+<meta property="og:url" content="https://bluearchive.wiki/wiki/Main_Page">
+<meta property="og:description" content="Blue Archive Wiki for ブルーアーカイブ,a free-to-play mobile game developed by Nexon Games.">
+<meta property="og:image" content="https://static.wikitide.net/bluearchivewiki/8/82/Arona_c.jpg?version=962c4441a08b7fa7ac85258ea5f82102">
+<meta property="og:image:width" content="1124">
+<meta property="og:image:height" content="1124">
+<meta property="og:image:alt" content="Blue Archive Wiki">
+<meta property="article:tag" content="Blue Archive,Wiki,ブルーアーカイブ,buruaka,ブルアカ">
+<meta property="article:modified_time" content="2025-07-15T14:49:21Z">
+<meta property="article:published_time" content="2025-07-15T14:49:21Z">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","name":"Main Page - Blue Archive Wiki","headline":"Main Page - Blue Archive Wiki","mainEntityOfPage":"Main Page","identifier":"https:\/\/bluearchive.wiki\/wiki\/Main_Page","url":"https:\/\/bluearchive.wiki\/wiki\/Main_Page","description":"Blue Archive Wiki for \u30d6\u30eb\u30fc\u30a2\u30fc\u30ab\u30a4\u30d6,a free-to-play mobile game developed by Nexon Games.","keywords":"Blue Archive,Wiki,\u30d6\u30eb\u30fc\u30a2\u30fc\u30ab\u30a4\u30d6,buruaka,\u30d6\u30eb\u30a2\u30ab","dateModified":"2025-07-15T14:49:21Z","datePublished":"2025-07-15T14:49:21Z","image":{"@type":"ImageObject","url":"https:\/\/static.wikitide.net\/bluearchivewiki\/8\/82\/Arona_c.jpg?version=962c4441a08b7fa7ac85258ea5f82102","width":1124,"height":1124},"author":{"@type":"Organization","name":"Blue Archive Wiki","url":"https:\/\/bluearchive.wiki","logo":{"@type":"ImageObject","url":"https:\/\/static.miraheze.org\/bluearchivewiki\/e\/ea\/Logo_bluearchive.png","caption":"Blue Archive Wiki"}},"publisher":{"@type":"Organization","name":"Blue Archive Wiki","url":"https:\/\/bluearchive.wiki","logo":{"@type":"ImageObject","url":"https:\/\/static.miraheze.org\/bluearchivewiki\/e\/ea\/Logo_bluearchive.png","caption":"Blue Archive Wiki"}},"potentialAction":{"@type":"SearchAction","target":"https:\/\/bluearchive.wiki\/wiki\/Special:Search?search={search_term}","query-input":"required name=search_term"}}</script>
+<link rel="dns-prefetch" href="login.miraheze.org">
+</head>
+<body class="skin-vector-legacy mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Main_Page rootpage-Main_Page skin-vector action-view"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Main Page</span></h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Blue Archive Wiki</div>
+		<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr"><div class="fp-container">
+<div class="fp-item fp-item-splash mw-no-invert">
+<div class="fp-item fp-logo mw-no-invert"></div>
+<div class="countdown mw-no-invert">
+<p><span class="mw-default-size" typeof="mw:File/Frameless"><span><img alt="Reset Shiroko!" src="//static.wikitide.net/bluearchivewiki/5/59/ShirokoSmall.png" decoding="async" width="39" height="70" class="mw-file-element" data-file-width="39" data-file-height="70"></span></span>
+</p>
+<div class="countdown-text">
+<p>Countdown to daily reset:<br>
+<span id="resetCountdown">00:00:00</span>
+</p>
+</div>
+</div>
+<style data-mw-deduplicate="TemplateStyles:r111107">.mw-parser-output .character-birthdays{width:calc(100% - 20px);background-color:rgba(255,255,255,0.7);border-radius:10px;margin:10px;padding:10px 10px 10px 80px;box-sizing:border-box;text-align:center}.mw-parser-output .character-birthdays img{margin:-30px 0px -20px -80px;float:left}.mw-parser-output .character-birthdays a::after{display:inline-block;width:1em;height:1em;content:"•";color:#a2a9b1;text-align:center}.mw-parser-output .character-birthdays a:last-child::after{display:none}@media(max-width:425px){.mw-parser-output .character-birthdays a::after{display:none}}</style>
+<div id="character-birthdays" class="character-birthdays mw-no-invert" data-birthdays="Airi |January 30&amp;Airi (Band) |January 30&amp;Akane |April 1&amp;Akane (Bunny Girl) |April 1&amp;Akari |December 9&amp;Akari (New Year) |December 9&amp;Ako |December 22&amp;Ako (Dress) |December 22&amp;Aoba |July 19&amp;Arisu |March 25&amp;Arisu (Maid) |March 25&amp;Aru |March 12&amp;Aru (Dress) |March 12&amp;Aru (New Year) |March 12&amp;Asuna |March 24&amp;Asuna (Bunny Girl) |March 24&amp;Asuna (School Uniform) |March 24&amp;Atsuko |January 20&amp;Atsuko (Swimsuit) |January 20&amp;Ayane |November 12&amp;Ayane (Swimsuit) |November 12&amp;Azusa |December 26&amp;Azusa (Swimsuit) |December 26&amp;Cherino |October 27&amp;Cherino (Hot Spring) |October 27&amp;Chiaki |September 22&amp;Chihiro |April 26&amp;Chinatsu |August 22&amp;Chinatsu (Hot Spring) |August 22&amp;Chise |July 13&amp;Chise (Swimsuit) |July 13&amp;Eimi |May 1&amp;Eimi (Swimsuit) |May 1&amp;Eri |October 31&amp;Fubuki |October 21&amp;Fubuki (Swimsuit) |October 21&amp;Fuuka |April 30&amp;Fuuka (New Year) |April 30&amp;Fuyu |September 5&amp;Hanae |May 12&amp;Hanae (Christmas) |May 12&amp;Hanako |January 3&amp;Hanako (Swimsuit) |January 3&amp;Hare |April 19&amp;Hare (Camping) |April 19&amp;Haruka |May 13&amp;Haruka (New Year) |May 13&amp;Haruna |March 1&amp;Haruna (New Year) |March 1&amp;Haruna (Sportswear) |March 1&amp;Hasumi |December 12&amp;Hasumi (Sportswear) |December 12&amp;Hasumi (Swimsuit) |December 12&amp;Hatsune Miku |August 31&amp;Hibiki |April 2&amp;Hibiki (Cheerleader) |April 2&amp;Hifumi |November 27&amp;Hifumi (Swimsuit) |November 27&amp;Hikari |June 14&amp;Himari |December 10&amp;Hina |February 19&amp;Hina (Dress) |February 19&amp;Hina (Swimsuit) |February 19&amp;Hinata |May 17&amp;Hinata (Swimsuit) |May 17&amp;Hiyori |January 8&amp;Hiyori (Swimsuit) |January 8&amp;Hoshino |January 2&amp;Hoshino (Battle) |January 2&amp;Hoshino (Swimsuit) |January 2&amp;Ibuki |April 14&amp;Ichika |November 11&amp;Ichika (Swimsuit) |November 11&amp;Iori |November 8&amp;Iori (Swimsuit) |November 8&amp;Iroha |November 16&amp;Izumi |May 11&amp;Izumi (New Year) |May 11&amp;Izumi (Swimsuit) |May 11&amp;Izuna |December 16&amp;Izuna (Swimsuit) |December 16&amp;Junko |December 27&amp;Junko (New Year) |December 27&amp;Juri |October 20&amp;Juri (Part-Timer) |October 20&amp;Kaede |July 9&amp;Kaho |October 9&amp;Kanna |September 7&amp;Kanna (Swimsuit) |September 7&amp;Kanoe |November 2&amp;Karin |February 2&amp;Karin (Bunny Girl) |February 2&amp;Karin (School Uniform) |February 2&amp;Kasumi |May 24&amp;Kayoko |March 17&amp;Kayoko (Dress) |March 17&amp;Kayoko (New Year) |March 17&amp;Kazusa |August 5&amp;Kazusa (Band) |August 5&amp;Kikyou |August 8&amp;Kikyou (Swimsuit) |August 8&amp;Kirara |February 24&amp;Kirino |October 22&amp;Kirino (Swimsuit) |October 22&amp;Kisaki |February 19&amp;Koharu |April 16&amp;Koharu (Swimsuit) |April 16&amp;Kokona |June 1&amp;Kotama |January 5&amp;Kotama (Camping) |January 5&amp;Kotori |December 31&amp;Kotori (Cheerleader) |December 31&amp;Koyuki |February 14&amp;Maki |August 1&amp;Maki (Camping) |August 1&amp;Makoto |March 19&amp;Mari |September 12&amp;Mari (Idol) |September 12&amp;Mari (Sportswear) |September 12&amp;Marina |November 4&amp;Marina (Qipao) |November 4&amp;Mashiro |June 5&amp;Mashiro (Swimsuit) |June 5&amp;Megu |April 25&amp;Meru |December 21&amp;Michiru |February 22&amp;Michiru (Dress) |February 22&amp;Midori |December 8&amp;Midori (Maid) |December 8&amp;Mika |May 8&amp;Mika (Swimsuit) |May 8&amp;Mimori |March 15&amp;Mimori (Swimsuit) |March 15&amp;Mina |September 9&amp;Mine |November 23&amp;Mine (Idol) |November 23&amp;Minori |July 14&amp;Misaka Mikoto |May 2&amp;Misaki |January 13&amp;Misaki (Swimsuit) |January 13&amp;Miyako |January 7&amp;Miyako (Swimsuit) |January 7&amp;Miyo |August 24&amp;Miyu |July 12&amp;Miyu (Swimsuit) |July 12&amp;Moe |September 13&amp;Moe (Swimsuit) |September 13&amp;Momiji |August 7&amp;Momoi |December 8&amp;Momoi (Maid) |December 8&amp;Mutsuki |July 29&amp;Mutsuki (New Year) |July 29&amp;Nagisa |July 4&amp;Nagisa (Swimsuit) |July 4&amp;Nagusa |December 7&amp;Natsu |December 4&amp;Natsu (Band) |December 4&amp;Neru |August 17&amp;Neru (Bunny Girl) |August 17&amp;Neru (School Uniform) |August 17&amp;Niya |January 1&amp;Noa |April 13&amp;Noa (Pajama) |April 13&amp;Nodoka |February 20&amp;Nodoka (Hot Spring) |February 20&amp;Nonomi |September 1&amp;Nonomi (Swimsuit) |September 1&amp;Nozomi |June 14&amp;Pina |November 3&amp;Pina (Guide) |November 3&amp;Rabu |May 6&amp;Rei |August 9&amp;Reijo |March 3&amp;Reisa |May 31&amp;Reisa (Magical) |May 31&amp;Renge |July 23&amp;Renge (Swimsuit) |July 23&amp;Rio |June 6&amp;Ritsu |March 6&amp;Rumi |March 5&amp;Saki |April 9&amp;Saki (Swimsuit) |April 9&amp;Sakurako |October 4&amp;Sakurako (Idol) |October 4&amp;Saori |September 3&amp;Saori (Dress) |September 3&amp;Saori (Swimsuit) |September 3&amp;Saten Ruiko | -&amp;Satsuki |April 10&amp;Saya |January 3&amp;Saya (Casual) |January 3&amp;Seia |September 29&amp;Seia (Swimsuit) |September 29&amp;Sena |April 7&amp;Sena (Casual) |April 7&amp;Serika |June 25&amp;Serika (New Year) |June 25&amp;Serika (Swimsuit) |June 25&amp;Serina |January 6&amp;Serina (Christmas) |January 6&amp;Shigure |January 22&amp;Shigure (Hot Spring) |January 22&amp;Shimiko |November 30&amp;Shiroko |May 16&amp;Shiroko (Riding) |May 16&amp;Shiroko (Swimsuit) |May 16&amp;Shiroko＊Terror |May 16&amp;Shizuko |July 7&amp;Shizuko (Swimsuit) |July 7&amp;Shokuhou Misaki | -&amp;Shun |February 5&amp;Shun (Kid) |February 5&amp;Subaru |March 9&amp;Sumire |August 20&amp;Sumire (Part-Timer) |August 20&amp;Suzumi |August 31&amp;Suzumi (Magical) |August 31&amp;Takane |June 18&amp;Toki |August 16&amp;Toki (Bunny Girl) |August 16&amp;Tomoe |November 10&amp;Tomoe (Qipao) |November 10&amp;Tsubaki |February 3&amp;Tsubaki (Guide) |February 3&amp;Tsukuyo |April 5&amp;Tsukuyo (Dress) |April 5&amp;Tsurugi |June 24&amp;Tsurugi (Swimsuit) |June 24&amp;Ui |April 23&amp;Ui (Swimsuit) |April 23&amp;Umika |July 1&amp;Utaha |November 13&amp;Utaha (Cheerleader) |November 13&amp;Wakamo |April 3&amp;Wakamo (Swimsuit) |April 3&amp;Yakumo |May 18&amp;Yoshimi |August 29&amp;Yoshimi (Band) |August 29&amp;Yukari |June 16&amp;Yukari (Swimsuit) |June 16&amp;Yuuka |March 14&amp;Yuuka (Pajama) |March 14&amp;Yuuka (Sportswear) |March 14&amp;Yuzu |August 12&amp;Yuzu (Maid) |August 12&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp; |&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;Momoka |September 3&amp;&amp;&amp;&amp;&amp;&amp; |&amp;&amp;&amp;&amp;Rin |November 1&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;" style="display: none;"><span typeof="mw:File/Frameless"><span title="Character birthdays"><img alt="Character birthdays" src="//static.wikitide.net/bluearchivewiki/thumb/2/2f/Item_Icon_Favor_26.png/80px-Item_Icon_Favor_26.png" decoding="async" width="80" height="63" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/2/2f/Item_Icon_Favor_26.png/120px-Item_Icon_Favor_26.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/2/2f/Item_Icon_Favor_26.png/160px-Item_Icon_Favor_26.png 2x" data-file-width="304" data-file-height="240"></span></span></div>
+</div>
+<div class="fp-item fp-item-current-gacha">
+<div class="fp-item-header">Current Gacha Banner</div>
+<div class="fp-item-content">
+<form id="tabs-inputform" class="tabs tabs-inputform" action="#"></form><div class="tabs tabs-tabbox tabs-plain server-toggle-parent" style="display:inline;"><input type="radio" form="tabs-inputform" id="tabs-input-1-0" name="tabs-1" class="tabs-input tabs-input-0" checked=""><input type="radio" form="tabs-inputform" id="tabs-input-1-1" name="tabs-1" class="tabs-input tabs-input-1"><label class="tabs-label" for="tabs-input-1-1" data-tabpos="1">JP</label><wbr><input type="radio" form="tabs-inputform" id="tabs-input-1-2" name="tabs-1" class="tabs-input tabs-input-2"><label class="tabs-label" for="tabs-input-1-2" data-tabpos="2">GL</label><wbr><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<p><span typeof="mw:File/Frameless"><a href="/wiki/Kisaki" title="Kisaki"><img src="//static.wikitide.net/bluearchivewiki/thumb/8/86/Lobby_Banner_20260107_01.png/300px-Lobby_Banner_20260107_01.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/8/86/Lobby_Banner_20260107_01.png/450px-Lobby_Banner_20260107_01.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/8/86/Lobby_Banner_20260107_01.png/600px-Lobby_Banner_20260107_01.png 2x" data-file-width="701" data-file-height="351"></a></span> <a href="/wiki/Kisaki" title="Kisaki">Kisaki</a>: 01/07 - 01/20
+</p><p><span typeof="mw:File/Frameless"><a href="/wiki/Reijo" title="Reijo"><img src="//static.wikitide.net/bluearchivewiki/thumb/e/ec/Lobby_Banner_20260107_02.png/300px-Lobby_Banner_20260107_02.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/e/ec/Lobby_Banner_20260107_02.png/450px-Lobby_Banner_20260107_02.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/e/ec/Lobby_Banner_20260107_02.png/600px-Lobby_Banner_20260107_02.png 2x" data-file-width="701" data-file-height="351"></a></span> <a href="/wiki/Reijo" title="Reijo">Reijo</a>: 01/07 - 01/20
+</p><p><span class="limited" typeof="mw:File/Frameless"><a href="/wiki/Yuuka_(Sportswear)" title="Yuuka (Sportswear)"><img src="//static.wikitide.net/bluearchivewiki/thumb/3/3d/Lobby_Banner_20230915_02.png/300px-Lobby_Banner_20230915_02.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/3/3d/Lobby_Banner_20230915_02.png/450px-Lobby_Banner_20230915_02.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/3/3d/Lobby_Banner_20230915_02.png/600px-Lobby_Banner_20230915_02.png 2x" data-file-width="701" data-file-height="351"></a></span> <a href="/wiki/Yuuka_(Sportswear)" title="Yuuka (Sportswear)">Yuuka (Sportswear)</a>: 01/07 - 01/20
+</p><p><span class="limited" typeof="mw:File/Frameless"><a href="/wiki/Mari_(Sportswear)" title="Mari (Sportswear)"><img src="//static.wikitide.net/bluearchivewiki/thumb/7/7e/Lobby_Banner_20230915_03.png/300px-Lobby_Banner_20230915_03.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/7/7e/Lobby_Banner_20230915_03.png/450px-Lobby_Banner_20230915_03.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/7/7e/Lobby_Banner_20230915_03.png/600px-Lobby_Banner_20230915_03.png 2x" data-file-width="701" data-file-height="351"></a></span> <a href="/wiki/Mari_(Sportswear)" title="Mari (Sportswear)">Mari (Sportswear)</a>: 01/07 - 01/20
+</p>
+</div>
+<div class="tabs-content tabs-content-2">
+<p><span class="limited" typeof="mw:File/Frameless"><a href="/wiki/Toki" title="Toki"><img src="//static.wikitide.net/bluearchivewiki/thumb/f/fa/Lobby_Banner_EN_20241015_01.png/300px-Lobby_Banner_EN_20241015_01.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/f/fa/Lobby_Banner_EN_20241015_01.png/450px-Lobby_Banner_EN_20241015_01.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/f/fa/Lobby_Banner_EN_20241015_01.png/600px-Lobby_Banner_EN_20241015_01.png 2x" data-file-width="702" data-file-height="352"></a></span> <a href="/wiki/Toki" title="Toki">Toki</a>: 01/06 - 01/13
+</p><p><span class="limited" typeof="mw:File/Frameless"><a href="/wiki/Nagisa" title="Nagisa"><img src="//static.wikitide.net/bluearchivewiki/thumb/f/f3/Lobby_Banner_EN_20241015_02.png/300px-Lobby_Banner_EN_20241015_02.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/f/f3/Lobby_Banner_EN_20241015_02.png/450px-Lobby_Banner_EN_20241015_02.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/f/f3/Lobby_Banner_EN_20241015_02.png/600px-Lobby_Banner_EN_20241015_02.png 2x" data-file-width="702" data-file-height="352"></a></span> <a href="/wiki/Nagisa" title="Nagisa">Nagisa</a>: 01/06 - 01/13
+</p><p><span typeof="mw:File/Frameless"><a href="/wiki/Kanna" title="Kanna"><img src="//static.wikitide.net/bluearchivewiki/thumb/4/4d/Lobby_Banner_EN_20260106_01.png/300px-Lobby_Banner_EN_20260106_01.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/4/4d/Lobby_Banner_EN_20260106_01.png/450px-Lobby_Banner_EN_20260106_01.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/4/4d/Lobby_Banner_EN_20260106_01.png/600px-Lobby_Banner_EN_20260106_01.png 2x" data-file-width="702" data-file-height="352"></a></span> <a href="/wiki/Kanna" title="Kanna">Kanna</a>: 01/06 - 01/13
+</p><p><span typeof="mw:File/Frameless"><a href="/wiki/Chiaki" title="Chiaki"><img src="//static.wikitide.net/bluearchivewiki/thumb/1/1c/Lobby_Banner_EN_20260106_02.png/300px-Lobby_Banner_EN_20260106_02.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/1/1c/Lobby_Banner_EN_20260106_02.png/450px-Lobby_Banner_EN_20260106_02.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/1/1c/Lobby_Banner_EN_20260106_02.png/600px-Lobby_Banner_EN_20260106_02.png 2x" data-file-width="702" data-file-height="352"></a></span> <a href="/wiki/Chiaki" title="Chiaki">Chiaki</a>: 01/06 - 01/13
+</p>
+</div>
+</div></div>
+</div>
+</div>
+<div class="fp-item fp-item-current-raid">
+<div class="fp-item-header">Current Raid Boss</div>
+<div class="fp-item-content">
+<div class="tabs tabs-tabbox tabs-plain server-toggle-parent" style="display:inline;"><input type="radio" form="tabs-inputform" id="tabs-input-2-0" name="tabs-2" class="tabs-input tabs-input-0" checked=""><input type="radio" form="tabs-inputform" id="tabs-input-2-1" name="tabs-2" class="tabs-input tabs-input-1"><label class="tabs-label" for="tabs-input-2-1" data-tabpos="1">JP</label><wbr><input type="radio" form="tabs-inputform" id="tabs-input-2-2" name="tabs-2" class="tabs-input tabs-input-2"><label class="tabs-label" for="tabs-input-2-2" data-tabpos="2">GL</label><wbr><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1">
+<p><span typeof="mw:File/Frameless"><a href="/wiki/Slumpia:_ShiroKuro_(Grand_Assault)" title="Slumpia: ShiroKuro (Grand Assault)"><img src="//static.wikitide.net/bluearchivewiki/thumb/f/f9/EliminateRaid_Banner_ShiroKuro.png/300px-EliminateRaid_Banner_ShiroKuro.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/f/f9/EliminateRaid_Banner_ShiroKuro.png/450px-EliminateRaid_Banner_ShiroKuro.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/f/f9/EliminateRaid_Banner_ShiroKuro.png/600px-EliminateRaid_Banner_ShiroKuro.png 2x" data-file-width="701" data-file-height="351"></a></span>
+</p><p><span id="currentraid" data-endtime="2026-01-19 18:59:59"><span title="Urban"><span typeof="mw:File/Frameless"><span><img alt="Urban" src="//static.wikitide.net/bluearchivewiki/thumb/1/13/Icon_location_city.png/24px-Icon_location_city.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/1/13/Icon_location_city.png/36px-Icon_location_city.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/1/13/Icon_location_city.png/48px-Icon_location_city.png 2x" data-file-width="87" data-file-height="86"></span></span></span> <a href="/wiki/Slumpia:_ShiroKuro_(Grand_Assault)" title="Slumpia: ShiroKuro (Grand Assault)">Slumpia: ShiroKuro (Grand Assault)</a>: 01/14&nbsp;-&nbsp;01/20</span>
+</p><p><br>
+</p>
+<span data-endtime="2026-01-19 18:59:59"><span title="Outdoors"><span typeof="mw:File/Frameless"><span><img alt="Outdoor" src="//static.wikitide.net/bluearchivewiki/thumb/6/6d/Icon_location_outdoors.png/24px-Icon_location_outdoors.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/6/6d/Icon_location_outdoors.png/36px-Icon_location_outdoors.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/6/6d/Icon_location_outdoors.png/48px-Icon_location_outdoors.png 2x" data-file-width="86" data-file-height="86"></span></span></span> <a href="/wiki/Celestial_Pantheon:_The_Fury_of_Set_(Limit_Break_Raid)" title="Celestial Pantheon: The Fury of Set (Limit Break Raid)">Celestial Pantheon: The Fury of Set (Limit Break Raid)</a>: 12/25&nbsp;-&nbsp;01/20</span></div>
+<div class="tabs-content tabs-content-2">
+<p><span typeof="mw:File/Frameless"><a href="/wiki/Decagrammaton:_Binah_(Grand_Assault)" title="Decagrammaton: Binah (Grand Assault)"><img src="//static.wikitide.net/bluearchivewiki/thumb/d/d0/EliminateRaid_Banner_Binah.png/300px-EliminateRaid_Banner_Binah.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/d/d0/EliminateRaid_Banner_Binah.png/450px-EliminateRaid_Banner_Binah.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/d/d0/EliminateRaid_Banner_Binah.png/600px-EliminateRaid_Banner_Binah.png 2x" data-file-width="701" data-file-height="351"></a></span>
+</p><p><span id="currentraid" data-endtime="2026-01-12 18:59:59"><span title="Urban"><span typeof="mw:File/Frameless"><span><img alt="Urban" src="//static.wikitide.net/bluearchivewiki/thumb/1/13/Icon_location_city.png/24px-Icon_location_city.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/1/13/Icon_location_city.png/36px-Icon_location_city.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/1/13/Icon_location_city.png/48px-Icon_location_city.png 2x" data-file-width="87" data-file-height="86"></span></span></span> <a href="/wiki/Decagrammaton:_Binah_(Grand_Assault)" title="Decagrammaton: Binah (Grand Assault)">Decagrammaton: Binah (Grand Assault)</a>: 01/06&nbsp;-&nbsp;01/13</span>
+</p><p><br>
+</p>
+<span data-endtime="2026-01-12 18:59:59"><span title="Indoors"><span typeof="mw:File/Frameless"><span><img alt="Indoor" src="//static.wikitide.net/bluearchivewiki/thumb/c/c1/Icon_location_indoors.png/24px-Icon_location_indoors.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/c/c1/Icon_location_indoors.png/36px-Icon_location_indoors.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/c/c1/Icon_location_indoors.png/48px-Icon_location_indoors.png 2x" data-file-width="86" data-file-height="86"></span></span></span> <a href="/wiki/Decagrammaton:_Tiphareth_(Limit_Break_Raid)" title="Decagrammaton: Tiphareth (Limit Break Raid)">Decagrammaton: Tiphareth (Limit Break Raid)</a>: 12/17&nbsp;-&nbsp;01/13</span></div>
+</div></div>
+</div>
+</div>
+<div class="fp-item fp-item-recent-updates">
+<div class="fp-item-header">Recent Updates</div>
+<div class="fp-item-content">
+<div class="tabs tabs-tabbox tabs-plain server-toggle-parent" style="display:inline;"><input type="radio" form="tabs-inputform" id="tabs-input-3-0" name="tabs-3" class="tabs-input tabs-input-0" checked=""><input type="radio" form="tabs-inputform" id="tabs-input-3-1" name="tabs-3" class="tabs-input tabs-input-1"><label class="tabs-label" for="tabs-input-3-1" data-tabpos="1">JP</label><wbr><input type="radio" form="tabs-inputform" id="tabs-input-3-2" name="tabs-3" class="tabs-input tabs-input-2"><label class="tabs-label" for="tabs-input-3-2" data-tabpos="2">GL</label><wbr><div class="tabs-container" style="">
+<div class="tabs-content tabs-content-1"><ul>
+<span typeof="mw:File/Frameless"><a href="/wiki/Descent_of_the_Five_Senses/Rerun" title="Descent of the Five Senses/Rerun"><img src="//static.wikitide.net/bluearchivewiki/thumb/e/e1/Event_Banner_840_Jp.png/300px-Event_Banner_840_Jp.png" decoding="async" width="300" height="150" class="mw-file-element" srcset="//static.wikitide.net/bluearchivewiki/thumb/e/e1/Event_Banner_840_Jp.png/450px-Event_Banner_840_Jp.png 1.5x, //static.wikitide.net/bluearchivewiki/thumb/e/e1/Event_Banner_840_Jp.png/600px-Event_Banner_840_Jp.png 2x" data-file-width="701" data-file-height="351"></a></span><li><a href="/wiki/Descent_of_the_Five_Senses/Rerun" title="Descent of the Five Senses/Rerun">Descent of the Five Senses</a>: 01/07 - 01/20</li>
+</ul>
+<ul>
+
+</ul>
+<ul>
+<li><a href="/wiki/Joint_Firepower_Exercise#Escort_Exercise" class="mw-redirect" title="Joint Firepower Exercise">Escort Exercise</a>: 01/07 - 01/14</li>
+</ul>
+<ul>
+<li>Double Hard <a href="/wiki/Missions" title="Missions">Missions</a> rewards: 01/07 - 01/14</li>
+</ul>
+<ul>
+
+</ul>
+<ul>
+
+</ul></div>
+<div class="tabs-content tabs-content-2"><ul>
+</ul>
+<ul>
+
+</ul>
+<ul>
+
+</ul>
+<ul>
+
+</ul>
+<ul>
+
+</ul>
+<ul>
+
+</ul></div>
+</div></div>
+</div>
+</div>
+<div class="fp-item fp-item-twitter"><div class="fp-item-header">Official Twitter Accounts</div>
+<ul><li><a rel="nofollow" class="external text" href="https://twitter.com/Blue_ArchiveJP">Japanese version</a></li>
+<li><a rel="nofollow" class="external text" href="https://twitter.com/EN_BlueArchive">Global version</a></li></ul>
+</div>
+<div class="fp-item fp-item-mechanics"><div class="fp-item-header">Mechanics</div><div class="fp-links-wrapper"><a href="/wiki/Characters" title="Characters"><div class="link-image link-characters mw-no-invert"></div><div class="link-text">Characters</div></a><a href="/wiki/NPC" title="NPC"><div class="link-image link-npc mw-no-invert"></div><div class="link-text">NPC</div></a><a href="/wiki/Equipment" title="Equipment"><div class="link-image link-equipment mw-no-invert"></div><div class="link-text">Equipment</div></a><a href="/wiki/Unique_weapons" title="Unique weapons"><div class="link-image link-unique-weapons mw-no-invert"></div><div class="link-text">Unique weapons</div></a><a href="/wiki/Recruitment_(Gacha)" title="Recruitment (Gacha)"><div class="link-image link-recruitment mw-no-invert"></div><div class="link-text">Recruitment (Gacha)</div></a><a href="/wiki/Schedule" class="mw-redirect" title="Schedule"><div class="link-image mw-no-invert"></div><div class="link-text">Schedule</div></a><a href="/wiki/Cafe" title="Cafe"><div class="link-image link-cafe mw-no-invert"></div><div class="link-text">Cafe</div></a><a href="/wiki/Affection" title="Affection"><div class="link-image link-affection mw-no-invert"></div><div class="link-text">Affection</div></a><a href="/wiki/Memorial_Lobby" title="Memorial Lobby"><div class="link-image mw-no-invert"></div><div class="link-text">Memorial Lobby</div></a><a href="/wiki/Crafting" title="Crafting"><div class="link-image mw-no-invert"></div><div class="link-text">Crafting</div></a><a href="/wiki/Tasks" title="Tasks"><div class="link-image mw-no-invert"></div><div class="link-text">Tasks</div></a><a href="/wiki/Shop" title="Shop"><div class="link-image link-shop mw-no-invert"></div><div class="link-text">Shop</div></a></div></div>
+<div class="fp-item fp-item-modes"><div class="fp-item-header">Game modes</div><div class="fp-links-wrapper"><a href="/wiki/Missions" title="Missions"><div class="link-image link-missions mw-no-invert"></div><div class="link-text">Missions</div></a><a href="/wiki/Total_Assault" title="Total Assault"><div class="link-image link-raid mw-no-invert"></div><div class="link-text">Total Assault</div></a><a href="/wiki/Grand_Assault" title="Grand Assault"><div class="link-image link-eliminateraid mw-no-invert"></div><div class="link-text">Grand Assault</div></a><a href="/wiki/Limit_Break_Assault" title="Limit Break Assault"><div class="link-image link-multifloorraid mw-no-invert"></div><div class="link-text">Limit Break Assault</div></a><a href="/wiki/Joint_Firing_Drill" title="Joint Firing Drill"><div class="link-image link-jfe mw-no-invert"></div><div class="link-text">Joint Firing Drill</div></a><a href="/wiki/Tactical_Challenge" title="Tactical Challenge"><div class="link-image link-arena mw-no-invert"></div><div class="link-text">Tactical Challenge</div></a><a href="/wiki/Commissions" title="Commissions"><div class="link-image link-commission mw-no-invert"></div><div class="link-text">Commissions</div></a><a href="/wiki/Bounty_Hunts" title="Bounty Hunts"><div class="link-image link-bountyhunt mw-no-invert"></div><div class="link-text">Bounty Hunts</div></a><a href="/wiki/Scrimmage" title="Scrimmage"><div class="link-image link-school_exchange mw-no-invert"></div><div class="link-text">Scrimmage</div></a><a href="/wiki/Events" title="Events"><div class="link-image link-events mw-no-invert"></div><div class="link-text">Events</div></a><a href="/wiki/Main_Story" title="Main Story"><div class="link-image link-mainstory mw-no-invert"></div><div class="link-text">Main Story</div></a><a href="/wiki/Music" title="Music"><div class="link-image link-music mw-no-invert"></div><div class="link-text">Music</div></a></div></div>
+<div class="fp-item fp-item-basics"><div class="fp-item-header">Basics</div><div class="fp-links-wrapper"><a href="/wiki/Getting_started" title="Getting started"><div class="link-image mw-no-invert"></div><div class="link-text">Getting started</div></a><a href="/wiki/Combat_basics" title="Combat basics"><div class="link-image mw-no-invert"></div><div class="link-text">Combat basics</div></a><a href="/wiki/FAQ" title="FAQ"><div class="link-image mw-no-invert"></div><div class="link-text">FAQ</div></a><a href="/wiki/Community_guides_and_resources" title="Community guides and resources"><div class="link-image mw-no-invert"></div><div class="link-text">Community resources</div></a></div></div></div>
+<!-- 
+NewPP limit report
+Parsed by mw152
+Cached time: 20260109043535
+Cache expiry: 3600
+Reduced expiry: true
+Complications: []
+CPU time usage: 0.739 seconds
+Real time usage: 1.214 seconds
+Preprocessor visited node count: 1281/1000000
+Post‐expand include size: 12737/2097152 bytes
+Template argument size: 2294/2097152 bytes
+Highest expansion depth: 12/100
+Expensive parser function count: 11/99
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 18509/5000000 bytes
+ExtLoops count: 0/100
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1171.964      1 -total
+ 84.48%  990.026      1 Template:Birthdays
+  5.65%   66.256      2 Template:FrontpagePanelEvents
+  3.95%   46.322      2 Template:FrontpagePanelRaid
+  3.87%   45.316      2 Template:FrontpagePanelBanners
+  1.31%   15.385      8 Template:FrontpageBanner
+  0.87%   10.251      4 Template:FrontpageRaid
+  0.35%    4.053      2 Template:FrontpageEvent
+  0.31%    3.665      4 Template:Icon
+  0.27%    3.118      1 Template:FrontpageJointFirepowerExercise
+-->
+
+<!-- Saved in parser cache with key bluearchivewiki:pcache:6:|#|:idhash:canonical and timestamp 20260109043535 and revision id 99814. Rendering was triggered because: page-view
+ -->
+</div><div class="ext-pagenotice-bottom-notice"><div id="bottom-notice"><div style="font-size:0.9em;padding-top:0.8em;text-align:center">Have a suggestion or some feedback you'd like to share? Come and visit Blue Archive Wiki's Discord server: <a rel="nofollow" class="external free" href="https://discord.gg/jSxjUDMddQ">https://discord.gg/jSxjUDMddQ</a></div></div></div><noscript><img src="https://bluearchive.wiki/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=0" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://bluearchive.wiki/wiki/Main_Page?oldid=99814">https://bluearchive.wiki/wiki/Main_Page?oldid=99814</a>"</div></div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Pages_using_DynamicPageList4_parser_tag" title="Category:Pages using DynamicPageList4 parser tag">Pages using DynamicPageList4 parser tag</a></li><li><a href="/wiki/Category:Pages_using_DynamicPageList4" title="Category:Pages using DynamicPageList4">Pages using DynamicPageList4</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="mw-cookiewarning-container"><div class="mw-cookiewarning-text"><span>Cookies help us deliver our services. By using our services, you agree to our use of cookies.</span></div><form method="POST"><div class='oo-ui-layout oo-ui-horizontalLayout'><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-flaggedElement-progressive oo-ui-buttonWidget'><a role='button' tabindex='0' href='https://meta.miraheze.org/wiki/Special:MyLanguage/Privacy_Policy#2._Cookies' rel='nofollow' class='oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-progressive'></span><span class='oo-ui-labelElement-label'>More information</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-progressive'></span></a></span><span class='oo-ui-widget oo-ui-widget-enabled oo-ui-inputWidget oo-ui-buttonElement oo-ui-buttonElement-framed oo-ui-labelElement oo-ui-flaggedElement-primary oo-ui-flaggedElement-progressive oo-ui-buttonInputWidget'><button type='submit' tabindex='0' name='disablecookiewarning' value='OK' class='oo-ui-inputWidget-input oo-ui-buttonElement-button'><span class='oo-ui-iconElement-icon oo-ui-iconElement-noIcon oo-ui-image-invert'></span><span class='oo-ui-labelElement-label'>OK</span><span class='oo-ui-indicatorElement-indicator oo-ui-indicatorElement-noIndicator oo-ui-image-invert'></span></button></span></div></form></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label"  >
+	<h3
+		id="p-personal-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anonuserpage" class="mw-list-item"><span title="The user page for the IP address you are editing as">Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-darkmode" class="mw-list-item"><a href="#" class="ext-darkmode-link"><span>Dark mode</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/wiki/Special:CreateAccount?returnto=Main+Page" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/wiki/Special:UserLogin?returnto=Main+Page" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o"><span>Log in</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			
+<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-namespaces-label"  >
+	<h3
+		id="p-namespaces-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Main_Page" title="View the content page [c]" accesskey="c"><span>Main Page</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Main_Page" rel="discussion" title="Discussion about the content page [t]" accesskey="t"><span>Discussion</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown vector-menu" aria-labelledby="p-variants-label"  >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-variants-label"
+	>
+	<label
+		id="p-variants-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">English</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			
+<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-views-label"  >
+	<h3
+		id="p-views-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected mw-list-item"><a href="/wiki/Main_Page"><span>Read</span></a></li><li id="ca-viewsource" class="mw-list-item"><a href="/wiki/Main_Page?action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e"><span>View source</span></a></li><li id="ca-history" class="mw-list-item"><a href="/wiki/Main_Page?action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<nav id="p-cactions" class="mw-portlet mw-portlet-cactions vector-menu-dropdown vector-menu" aria-labelledby="p-cactions-label"  title="More options" >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox"
+		aria-labelledby="p-cactions-label"
+	>
+	<label
+		id="p-cactions-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">More</span>
+	</label>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-purge" class="mw-list-item"><a href="/wiki/Main_Page?action=purge"><span>Purge</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<h3 >Search</h3>
+	<form action="/w/index.php" id="searchform" class="vector-search-box-form">
+		<div id="simpleSearch"
+			class="vector-search-box-inner"
+			 data-search-loc="header-navigation">
+			<input class="vector-search-box-input"
+				 type="search" name="search" placeholder="Search Blue Archive Wiki" aria-label="Search Blue Archive Wiki" autocapitalize="sentences" spellcheck="false" title="Search Blue Archive Wiki [f]" accesskey="f" id="searchInput"
+			>
+			<input type="hidden" name="title" value="Special:Search">
+			<input id="mw-searchButton"
+				 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search the pages for this text" value="Search">
+			<input id="searchButton"
+				 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go">
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel" class="vector-legacy-sidebar">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	
+<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu-portal portal vector-menu" aria-labelledby="p-navigation-label"  >
+	<h3
+		id="p-navigation-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Load a random page [x]" accesskey="x"><span>Random page</span></a></li><li id="n-help-mediawiki" class="mw-list-item"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents"><span>Help about MediaWiki</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+<nav id="p-Characters" class="mw-portlet mw-portlet-Characters vector-menu-portal portal vector-menu" aria-labelledby="p-Characters-label"  >
+	<h3
+		id="p-Characters-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Characters</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-Characters" class="mw-list-item"><a href="/wiki/Characters"><span>Characters</span></a></li><li id="n-Equipment" class="mw-list-item"><a href="/wiki/Equipment"><span>Equipment</span></a></li><li id="n-Unique-weapons" class="mw-list-item"><a href="/wiki/Unique_weapons"><span>Unique weapons</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+<nav id="p-Shortcuts" class="mw-portlet mw-portlet-Shortcuts vector-menu-portal portal vector-menu" aria-labelledby="p-Shortcuts-label"  >
+	<h3
+		id="p-Shortcuts-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Shortcuts</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-Events" class="mw-list-item"><a href="/wiki/Events"><span>Events</span></a></li><li id="n-Missions" class="mw-list-item"><a href="/wiki/Missions"><span>Missions</span></a></li><li id="n-Total-Assault" class="mw-list-item"><a href="/wiki/Total_Assault"><span>Total Assault</span></a></li><li id="n-Grand-Assault" class="mw-list-item"><a href="/wiki/Grand_Assault"><span>Grand Assault</span></a></li><li id="n-Limit-Break-Assault" class="mw-list-item"><a href="/wiki/Limit_Break_Assault"><span>Limit Break Assault</span></a></li><li id="n-Recruitment-(Gacha)" class="mw-list-item"><a href="/wiki/Recruitment_(Gacha)"><span>Recruitment (Gacha)</span></a></li><li id="n-Tasks" class="mw-list-item"><a href="/wiki/Tasks"><span>Tasks</span></a></li><li id="n-FAQ" class="mw-list-item"><a href="/wiki/FAQ"><span>FAQ</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu-portal portal vector-menu" aria-labelledby="p-tb-label"  >
+	<h3
+		id="p-tb-label"
+		
+		class="vector-menu-heading "
+	>
+		<span class="vector-menu-heading-label">Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Main_Page" title="A list of all wiki pages that link here [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Main_Page" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/wiki/Main_Page?oldid=99814" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/wiki/Main_Page?action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cargopagevalueslink" class="mw-list-item"><a href="/wiki/Main_Page?action=pagevalues" rel="cargo-pagevalues"><span>Cargo data</span></a></li><li id="t-cite" class="mw-list-item"><a href="/wiki/Special:CiteThisPage?page=Main_Page&amp;id=99814&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/wiki/Special:UrlShortener?url=https%3A%2F%2Fbluearchive.wiki%2Fwiki%2FMain_Page"><span>Get shortened URL</span></a></li>
+		</ul>
+		
+	</div>
+</nav>
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 15 July 2025, at 14:49.</li>
+	<li id="footer-info-copyright">Content is available under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) unless otherwise noted.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Privacy_Policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Blue_Archive_Wiki:About">About Blue Archive Wiki</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Blue_Archive_Wiki:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-termsofservice"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Terms_of_Use">Terms of Use</a></li>
+	<li id="footer-places-donate"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Donate">Donate to Miraheze</a></li>
+	<li id="footer-places-mobileview"><a href="https://bluearchive.wiki/wiki/Main_Page?mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-mirahezeico"><a href="https://meta.miraheze.org/wiki/Special:MyLanguage/Miraheze_Meta" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="https://static.wikitide.net/commonswiki/f/fe/Powered_by_Miraheze_(no_box).svg" alt="Hosted by Miraheze" width="88" height="31" loading="lazy"></a></li>
+	<li id="footer-copyrightico"><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><img src="https://meta.miraheze.org/1.44/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)" width="88" height="31" loading="lazy"></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/1.44/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/1.44/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+</footer>
+
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet vector-menu-portal portal" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw152","wgBackendResponseTime":1405,"wgPageParseReport":{"limitreport":{"cputime":"0.739","walltime":"1.214","ppvisitednodes":{"value":1281,"limit":1000000},"postexpandincludesize":{"value":12737,"limit":2097152},"templateargumentsize":{"value":2294,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":11,"limit":99},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":18509,"limit":5000000},"timingprofile":["100.00% 1171.964      1 -total"," 84.48%  990.026      1 Template:Birthdays","  5.65%   66.256      2 Template:FrontpagePanelEvents","  3.95%   46.322      2 Template:FrontpagePanelRaid","  3.87%   45.316      2 Template:FrontpagePanelBanners","  1.31%   15.385      8 Template:FrontpageBanner","  0.87%   10.251      4 Template:FrontpageRaid","  0.35%    4.053      2 Template:FrontpageEvent","  0.31%    3.665      4 Template:Icon","  0.27%    3.118      1 Template:FrontpageJointFirepowerExercise"]},"loops":{"limitreport-count-limited":{"value":0,"limit":100}},"cachereport":{"origin":"mw152","timestamp":"20260109043535","ttl":3600,"transientcontent":true}}});});</script>
+	<script>
+	var _paq = window._paq = window._paq || [];
+	if ( 1 ) {
+		_paq.push(['disableCookies']);
+	}
+	if ( 0 ) {
+		_paq.push(['setRequestMethod', 'GET']);
+	}
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u = "https://analytics.wikitide.net/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']);
+		_paq.push(['setDocumentTitle', "bluearchivewiki" + " - " + "Main Page"]);
+		_paq.push(['setSiteId', 2345]);
+		if ( 1 ) {
+			_paq.push(['setCustomDimension', 1, "Anonymous"]);
+		}
+		if ( 1 ) {
+			_paq.push(['addTracker', u + 'matomo.php', 1]);
+		}
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	})();
+	</script>
+	<noscript><p><img src="https://analytics.wikitide.net/matomo.php?idsite=2345&amp;rec=1&amp;action_name=Main_Page" style="border: 0;" alt="" /></p></noscript>
+</body>
+</html>
