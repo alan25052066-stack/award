@@ -9,8 +9,7 @@
 <body>
 
   <!-- 第一关：火影忍者（连打） -->
-  <section id="naruto-section" class="level-section" data-unlocked="true"
-           style="background-image: url('assets/naruto-bg.png')">
+  <section id="naruto-section" class="level-section" data-unlocked="true" data-bg="naruto-bg.png">
     <div class="level-content">
       <h2>火影忍者挑战</h2>
       <div class="challenge-desc">
@@ -26,8 +25,7 @@
   </section>
 
   <!-- 第二关：原神（滑动收集） -->
-  <section id="genshin-section" class="level-section"
-           style="background-image: url('assets/genshin-bg.png')">
+  <section id="genshin-section" class="level-section" data-bg="genshin-bg.png">
     <div class="level-content">
       <h2>⚔️ 原神冒险</h2>
       <div class="challenge-desc">
@@ -43,10 +41,9 @@
   </section>
 
   <!-- 第三关：CS2（手机摇晃） -->
-  <section id="cs2-section" class="level-section"
-           style="background-image: url('assets/cs2-bg.png')">
+  <section id="cs2-section" class="level-section" data-bg="cs2-bg.png">
     <div class="level-content">
-      <h2>💀 反恐精英行动</h2>
+      <h2>反恐精英行动</h2>
       <div class="challenge-desc">
         <p>赢得10局竞技模式！</p>
         <button class="btn start-btn" disabled>请先完成上一关</button>
@@ -61,8 +58,7 @@
   </section>
 
   <!-- 第四关：三角洲行动（快速点击） -->
-  <section id="delta-section" class="level-section"
-           style="background-image: url('assets/delta-bg.png')">
+  <section id="delta-section" class="level-section" data-bg="delta-bg.png">
     <div class="level-content">
       <h2> 三角洲行动</h2>
       <div class="challenge-desc">
@@ -78,8 +74,7 @@
   </section>
 
   <!-- 第五关：泰拉瑞亚（长按挖掘） -->
-  <section id="terraria-section" class="level-section"
-           style="background-image: url('assets/terraria-bg.png')">
+  <section id="terraria-section" class="level-section" data-bg="terraria-bg.png">
     <div class="level-content">
       <h2>⛏️ 泰拉瑞亚世界</h2>
       <div class="challenge-desc">
@@ -97,19 +92,20 @@
   </section>
 
   <!-- 最终关：星野颁奖典礼 -->
-  <section id="final-award-section" class="level-section"
-           style="background-image: url('assets/hoshino-stage-bg.png')">
+  <section id="final-award-section" class="level-section" data-bg="hoshino-stage-bg.png">
     <div class="level-content award-content">
       <h2>小鸟游星野 · 颁奖典礼</h2>
       <div class="award-icon">
-        <img src="assets/award-iron-butt.png" alt="铁腚奖" />
+        <img src="award-iron-butt.png" alt="铁腚奖" />
       </div>
       <p>恭喜你完成全部挑战！<br>荣获阿拜多斯对策委员会最高荣誉——</p>
       <h3>铁腚奖（Iron Butt Award）</h3>
       <p>“坐得住、打得赢、肝得动”</p>
+      <p class="hard-seat-msg">🚄 恭喜你坐硬座40小时！</p>
       <div id="award-message" class="hidden">
         <p>全关卡已完成！</p>
       </div>
+      <button id="restart-btn" class="btn restart-btn">重新开始</button>
     </div>
   </section>
 
