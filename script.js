@@ -1,137 +1,159 @@
-// 屏幕元素
-const screens = {
-    start: document.getElementById('start-screen'),
-    delta: document.getElementById('delta-screen'),
-    cs2: document.getElementById('cs2-screen'),
-    terraria: document.getElementById('terraria-screen'),
-    naruto: document.getElementById('naruto-screen'),
-    genshin: document.getElementById('genshin-screen'),
-    award: document.getElementById('award-screen')
-};
+// script.js - 铁腚奖挑战系统
+document.addEventListener('DOMContentLoaded', () => {
+  // 关卡状态
+  const levels = {
+    naruto: { completed: false, next: 'genshin' },
+    genshin: { completed: false, next: 'cs2' },
+    cs2: { completed: false, next: 'delta' },
+    delta: { completed: false, next: 'terraria' },
+    terraria: { completed: false, next: 'award' }
+  };
 
-// 按钮和计数器
-const deltaBtn = document.getElementById('delta-btn');
-const deltaCounter = document.getElementById('delta-counter');
-const cs2Shake = document.getElementById('cs2-shake');
-const terrariaBtn = document.getElementById('terraria-btn');
-const terrariaProgress = document.getElementById('terraria-progress');
-const narutoBtn = document.getElementById('naruto-btn');
-const narutoCounter = document.getElementById('naruto-counter');
-const genshinArea = document.getElementById('genshin-area');
-const genshinCounter = document.getElementById('genshin-counter');
+  // 初始化：绑定“开始挑战”按钮
+  document.querySelectorAll('.start-btn').forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const section = btn.closest('.level-section');
+      section.querySelector('.challenge-desc').classList.add('hidden');
+      section.querySelector('.challenge-game').classList.remove('hidden');
+      
+      // 根据关卡类型启动对应游戏
+      if (index === 0) startNaruto();
+      else if (index === 1) startGenshin();
+      else if (index === 2) startCS2();
+      else if (index === 3) startDelta();
+      else if (index === 4) startTerraria();
+    });
+  });
 
-// 游戏状态
-let gameState = {
-    deltaClicks: 0,
-    cs2Shakes: 0,
-    terrariaHeld: 0,
-    narutoClicks: 0,
-    genshinSwipes: 0
-};
+  // ===== 火影：连打 =====
+  let narutoClicks = 0;
+  function startNaruto() {
+    const btn = document.getElementById('naruto-btn');
+    const counter = document.getElementById('naruto-counter');
+    narutoClicks = 0;
+    btn.onclick = () => {
+      narutoClicks++;
+      counter.textContent = `连打: ${narutoClicks} / 20`;
+      if (narutoClicks >= 20) {
+        completeLevel('naruto');
+      }
+    };
+  }
 
-// 开始游戏
-function startGame() {
-    screens.start.classList.add('hidden');
-    screens.delta.classList.remove('hidden');
-}
-
-// === 三角洲：快速点击 ===
-deltaBtn.addEventListener('click', () => {
-    gameState.deltaClicks++;
-    deltaCounter.textContent = `点击数: ${gameState.deltaClicks}`;
-    if (gameState.deltaClicks >= 10) {
-        setTimeout(() => {
-            screens.delta.classList.add('hidden');
-            screens.cs2.classList.remove('hidden');
-            startCS2Shake();
-        }, 300);
-    }
-});
-
-// === CS2：摇一摇 ===
-let lastX = 0, lastY = 0, lastZ = 0;
-function startCS2Shake() {
-    window.addEventListener('devicemotion', handleCS2Shake);
-}
-
-function handleCS2Shake(event) {
-    const { x, y, z } = event.accelerationIncludingGravity;
-    const dx = Math.abs(x - lastX);
-    const dy = Math.abs(y - lastY);
-    const dz = Math.abs(z - lastZ);
-
-    if (dx > 10 || dy > 10 || dz > 15) {
-        gameState.cs2Shakes++;
-        cs2Shake.textContent = `颠簸: ${gameState.cs2Shakes}/10`;
-        if (navigator.vibrate) navigator.vibrate(50);
-    }
-
-    lastX = x; lastY = y; lastZ = z;
-
-    if (gameState.cs2Shakes >= 10) {
-        window.removeEventListener('devicemotion', handleCS2Shake);
-        screens.cs2.classList.add('hidden');
-        screens.terraria.classList.remove('hidden');
-    }
-}
-
-// === 泰拉瑞亚：长按 ===
-let terrariaInterval = null;
-terrariaBtn.addEventListener('mousedown', startTerrariaHold);
-terrariaBtn.addEventListener('touchstart', startTerrariaHold);
-
-function startTerrariaHold(e) {
-    e.preventDefault();
-    gameState.terrariaHeld = 0;
-    terrariaProgress.style.width = '0%';
+  // ===== 原神：滑动 =====
+  let genshinSwipes = 0;
+  function startGenshin() {
+    const area = document.getElementById('genshin-area');
+    const counter = document.getElementById('genshin-counter');
+    genshinSwipes = 0;
     
-    terrariaInterval = setInterval(() => {
-        gameState.terrariaHeld += 1;
-        terrariaProgress.style.width = (gameState.terrariaHeld * 20) + '%';
-        
-        if (gameState.terrariaHeld >= 5) {
-            clearInterval(terrariaInterval);
-            screens.terraria.classList.add('hidden');
-            screens.naruto.classList.remove('hidden');
-        }
-    }, 100);
-}
-
-// 停止长按
-window.addEventListener('mouseup', () => { if (terrariaInterval) clearInterval(terrariaInterval); });
-window.addEventListener('touchend', () => { if (terrariaInterval) clearInterval(terrariaInterval); });
-
-// === 火影：连打 ===
-narutoBtn.addEventListener('click', () => {
-    gameState.narutoClicks++;
-    narutoCounter.textContent = `连打: ${gameState.narutoClicks}/20`;
-    if (gameState.narutoClicks >= 20) {
-        screens.naruto.classList.add('hidden');
-        screens.genshin.classList.remove('hidden');
-        setupGenshinSwipe();
-    }
-});
-
-// === 原神：滑动 ===
-let isTouching = false;
-function setupGenshinSwipe() {
-    genshinArea.addEventListener('touchstart', () => isTouching = true);
-    genshinArea.addEventListener('touchend', handleSwipe);
-    genshinArea.addEventListener('touchcancel', () => isTouching = false);
+    const handleSwipe = () => {
+      genshinSwipes++;
+      counter.textContent = `已收集: ${genshinSwipes} / 5`;
+      if (genshinSwipes >= 5) {
+        completeLevel('genshin');
+      }
+    };
     
-    // PC 鼠标模拟（可选）
-    genshinArea.addEventListener('mousedown', () => isTouching = true);
-    genshinArea.addEventListener('mouseup', handleSwipe);
-}
+    area.addEventListener('click', handleSwipe);
+    area.addEventListener('touchstart', handleSwipe);
+  }
 
-function handleSwipe() {
-    if (isTouching) {
-        isTouching = false;
-        gameState.genshinSwipes++;
-        genshinCounter.textContent = `已收集: ${gameState.genshinSwipes}/5`;
-        if (gameState.genshinSwipes >= 5) {
-            screens.genshin.classList.add('hidden');
-            screens.award.classList.remove('hidden');
-        }
+  // ===== CS2：摇晃（含PC模拟） =====
+  let cs2Shakes = 0;
+  function startCS2() {
+    const counter = document.getElementById('cs2-shake');
+    const simulateBtn = document.getElementById('cs2-simulate');
+    cs2Shakes = 0;
+    
+    // 手机摇晃
+    const handleMotion = (e) => {
+      if (!e.accelerationIncludingGravity) return;
+      const { x, y, z } = e.accelerationIncludingGravity;
+      if (Math.abs(x) > 8 || Math.abs(y) > 8 || Math.abs(z) > 12) {
+        addShake();
+      }
+    };
+    
+    // PC模拟按钮
+    simulateBtn.onclick = addShake;
+    
+    // 添加一次摇晃
+    function addShake() {
+      cs2Shakes++;
+      counter.textContent = `颠簸: ${cs2Shakes} / 10`;
+      if (navigator.vibrate) navigator.vibrate(50);
+      if (cs2Shakes >= 10) {
+        window.removeEventListener('devicemotion', handleMotion);
+        completeLevel('cs2');
+      }
     }
-}
+    
+    window.addEventListener('devicemotion', handleMotion);
+  }
+
+  // ===== 三角洲：快速点击 =====
+  let deltaClicks = 0;
+  function startDelta() {
+    const btn = document.getElementById('delta-btn');
+    const counter = document.getElementById('delta-counter');
+    deltaClicks = 0;
+    btn.onclick = () => {
+      deltaClicks++;
+      counter.textContent = `点击: ${deltaClicks} / 10`;
+      if (deltaClicks >= 10) {
+        completeLevel('delta');
+      }
+    };
+  }
+
+  // ===== 泰拉瑞亚：长按 =====
+  let terrariaInterval = null;
+  function startTerraria() {
+    const btn = document.getElementById('terraria-btn');
+    const progress = document.getElementById('terraria-progress');
+    
+    const startHold = (e) => {
+      e.preventDefault();
+      let held = 0;
+      progress.style.width = '0%';
+      terrariaInterval = setInterval(() => {
+        held += 1;
+        progress.style.width = (held * 20) + '%';
+        if (held >= 5) {
+          clearInterval(terrariaInterval);
+          completeLevel('terraria');
+        }
+      }, 100);
+    };
+    
+    const stopHold = () => {
+      if (terrariaInterval) clearInterval(terrariaInterval);
+    };
+    
+    btn.addEventListener('mousedown', startHold);
+    btn.addEventListener('touchstart', startHold);
+    window.addEventListener('mouseup', stopHold);
+    window.addEventListener('touchend', stopHold);
+  }
+
+  // ===== 通用：完成关卡 =====
+  function completeLevel(levelKey) {
+    levels[levelKey].completed = true;
+    const section = document.getElementById(`${levelKey}-section`);
+    section.classList.add('completed');
+    
+    // 解锁下一关
+    const nextKey = levels[levelKey].next;
+    if (nextKey === 'award') {
+      // 显示颁奖区
+      document.getElementById('award-message').classList.remove('hidden');
+      document.getElementById('final-award-section').scrollIntoView({ behavior: 'smooth' });
+    } else {
+      const nextSection = document.getElementById(`${nextKey}-section`);
+      nextSection.classList.add('unlocked');
+      nextSection.querySelector('.start-btn').disabled = false;
+      nextSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+});
