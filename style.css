@@ -1,267 +1,101 @@
-/* =============== 全局重置与基础 =============== */
+/* style.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth; /* 平滑滚动到下一关 */
-}
-
 body {
-  font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", sans-serif;
-  color: white;
-  background-color: #0a0a12;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-/* =============== 通用区块样式 =============== */
-.level-section {
+  font-family: "Microsoft YaHei", sans-serif;
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
+  align-items: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
-}
-
-.level-content {
+  color: white;
   text-align: center;
-  max-width: 650px;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 35px 25px;
-  border-radius: 18px;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
-.level-content h2 {
-  font-size: 2.3rem;
-  margin-bottom: 20px;
-  color: #ffcc00;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+.level-section {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.level-content p {
-  font-size: 1.25rem;
-  margin: 12px 0;
-  line-height: 1.7;
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
-/* =============== 首页样式 =============== */
-.home-section {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+p {
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  line-height: 1.5;
 }
 
-.home-section .level-content {
-  background: rgba(10, 15, 30, 0.9);
-  padding: 50px 30px;
-  border: 2px solid #ffcc00;
-  animation: fadeIn 1s ease-out;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.home-section h2 {
-  font-size: 2.8rem;
-  color: #fff;
-  margin-bottom: 25px;
-  background: linear-gradient(to right, #ffcc00, #ff6b6b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: none;
-}
-
-.home-section p {
-  font-size: 1.4rem;
-  color: #ddd;
-  margin-bottom: 30px;
-}
-
-/* =============== 按钮通用样式 =============== */
 .btn {
   display: inline-block;
-  background: linear-gradient(45deg, #ff6b6b, #ffa500);
+  padding: 0.8rem 1.8rem;
+  margin-top: 1rem;
+  background: #ff6b6b;
   color: white;
   border: none;
-  padding: 14px 32px;
-  font-size: 1.25rem;
-  font-weight: bold;
   border-radius: 50px;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+  transition: all 0.3s;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
-}
-
-.btn:active {
-  transform: translateY(0);
-}
-
-.start-btn,
-.restart-btn {
-  background: linear-gradient(45deg, #4facfe, #00f2fe);
-  box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
-}
-
-.start-btn:hover,
-.restart-btn:hover {
-  box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
-}
-
-.restart-btn {
-  background: linear-gradient(45deg, #6a11cb, #2575fc);
-  box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
-}
-
-.restart-btn:hover {
-  box-shadow: 0 6px 20px rgba(37, 117, 252, 0.6);
-}
-
-/* =============== 游戏区域 =============== */
-.challenge-game {
-  margin-top: 25px;
-}
-
-.game-btn {
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  padding: 16px 40px;
-  font-size: 1.4rem;
-  border-radius: 12px;
-  margin: 20px 0;
-}
-
-#naruto-counter,
-#terraria-counter {
-  font-size: 1.3rem;
-  margin-top: 15px;
-  color: #aaffaa;
-}
-
-.progress-bar {
-  height: 16px;
-  background: #333;
-  border-radius: 8px;
-  margin: 20px auto;
-  max-width: 400px;
-  overflow: hidden;
-}
-
-#terraria-progress {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(to right, #00c9ff, #92fe9d);
-  transition: width 0.3s ease;
+  background: #ff5252;
+  transform: scale(1.05);
 }
 
 .hidden {
   display: none !important;
 }
 
-/* =============== 颁奖页面（星野） =============== */
-#final-award-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('hoshino-stage-bg.png') !important;
+/* 游戏区域 */
+.swipe-area {
+  width: 200px;
+  height: 100px;
+  margin: 1rem auto;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed #fff;
+  border-radius: 8px;
 }
 
-.award-content {
-  margin-top: 120px; /* 关键：把内容整体下移，避开星野上半身 */
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background: #444;
+  border-radius: 10px;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+#terraria-progress {
+  height: 100%;
+  width: 0%;
+  background: #4caf50;
+  transition: width 0.1s;
+}
+
+.hint {
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .award-icon img {
-  width: 140px;
-  margin: 25px 0;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
-}
-
-#final-award-section h3 {
-  font-size: 2rem;
-  color: gold;
-  margin: 15px 0;
-  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-}
-
-.hard-seat-msg {
-  font-size: 1.6rem;
-  color: #ffcc00;
-  margin-top: 25px;
-  font-weight: bold;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
-}
-
-/* =============== 响应式：手机适配 =============== */
-@media (max-width: 768px) {
-  .level-content {
-    padding: 25px 15px;
-  }
-
-  .home-section h2 {
-    font-size: 2.2rem;
-  }
-
-  .home-section p {
-    font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 12px 28px;
-    font-size: 1.15rem;
-  }
-
-  .game-btn {
-    padding: 14px 30px;
-    font-size: 1.25rem;
-  }
-
-  .award-content {
-    margin-top: 100px; /* 手机上稍微少一点 */
-  }
-
-  #final-award-section h3 {
-    font-size: 1.7rem;
-  }
-
-  .hard-seat-msg {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-section h2 {
-    font-size: 1.9rem;
-  }
-
-  .btn {
-    padding: 10px 24px;
-    font-size: 1.1rem;
-  }
-
-  .level-content h2 {
-    font-size: 1.9rem;
-  }
-
-  .award-content {
-    margin-top: 90px;
-  }
+  width: 120px;
+  height: auto;
+  margin: 1rem 0;
 }
