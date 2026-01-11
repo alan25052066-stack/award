@@ -1,76 +1,53 @@
-// script.js —— 安全、无报错、支持预加载
+// script.js —— 安全、无报错、预加载 PNG 图片
 
-/**
- * 安全获取元素：如果存在才返回，否则 null
- */
 function $(selector) {
   return document.querySelector(selector);
 }
 
-/**
- * 预加载图片函数（支持 WebP + PNG fallback）
- */
-function preloadImage(srcWebP, srcFallback) {
-  return new Promise((resolve) => {
-    const img = new Image();
-    // 优先尝试 WebP
-    img.onload = img.onerror = () => {
-      resolve(img.src);
-    };
-    img.src = srcWebP;
-    // 如果浏览器不支持 WebP（极少见），可手动 fallback
-    // 这里我们假设 WebP 已生成，若加载失败再试 PNG（可选）
-  });
-}
-
-/**
- * 预加载所有关卡背景图（提升后续页面速度）
- */
-async function preloadAllBackgrounds() {
-  const images = [
-    'images/naruto-bg.webp',
-    'images/genshin-bg.webp',
-    'images/cs2-bg.webp',
-    'images/delta-bg.webp',
-    'images/terraria-bg.webp',
-    'images/hoshino-stage-bg.webp',
-    'images/award-iron-butt.webp'
+// 预加载所有关键 PNG 图片（根目录）
+async function preloadAllImages() {
+  const files = [
+    'naruto-bg.png',
+    'genshin-bg.png',
+    'cs2-bg.png',
+    'delta-bg.png',
+    'terraria-bg.png',
+    'hoshino-stage-bg.png',
+    'award-iron-butt.png'
   ];
 
-  // 并发预加载（不会阻塞页面）
-  await Promise.all(images.map(src => preloadImage(src)));
-  console.log('✅ 所有关键图片已预加载');
+  await Promise.all(files.map(file => {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload = img.onerror = resolve;
+      img.src = file;
+    });
+  }));
+  console.log('✅ 所有 PNG 图片已预加载');
 }
 
-// 页面加载完成后开始预加载（不影响首屏）
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', preloadAllBackgrounds);
+  document.addEventListener('DOMContentLoaded', preloadAllImages);
 } else {
-  preloadAllBackgrounds();
+  preloadAllImages();
 }
 
-/**
- * 页面跳转工具
- */
 function goToPage(url) {
   window.location.href = url;
 }
 
-// ———————— 关卡逻辑 ————————
+// ========== 关卡逻辑 ==========
 
 // 首页
 if ($('.home-section')) {
-  $('#start-btn')?.addEventListener('click', () => {
-    goToPage('naruto-challenge.html');
-  });
+  $('#start-btn')?.addEventListener('click', () => goToPage('naruto-challenge.html'));
 }
 
-// 第一关：火影
+// 第一关：火影（连打20次）
 if ($('#naruto-btn')) {
   let count = 0;
   const btn = $('#naruto-btn');
   const counter = $('#naruto-counter');
-
   btn.addEventListener('click', () => {
     count++;
     counter.textContent = `连打: ${count} / 20`;
@@ -86,12 +63,11 @@ if ($('#naruto-btn')) {
   });
 }
 
-// 第二关：原神（点击模拟滑动）
+// 第二关：原神（点击5次）
 if ($('#genshin-area')) {
   let collected = 0;
   const area = $('#genshin-area');
   const counter = $('#genshin-counter');
-
   area.addEventListener('click', () => {
     if (collected < 5) {
       collected++;
@@ -107,12 +83,11 @@ if ($('#genshin-area')) {
   });
 }
 
-// 第三关：CS2
+// 第三关：CS2（点10次）
 if ($('#cs2-simulate')) {
   let shakes = 0;
   const display = $('#cs2-shake');
   const btn = $('#cs2-simulate');
-
   btn.addEventListener('click', () => {
     shakes++;
     display.textContent = `颠簸: ${shakes} / 10`;
@@ -127,12 +102,11 @@ if ($('#cs2-simulate')) {
   });
 }
 
-// 第四关：三角洲
+// 第四关：三角洲（点10次）
 if ($('#delta-btn')) {
   let clicks = 0;
   const btn = $('#delta-btn');
   const counter = $('#delta-counter');
-
   btn.addEventListener('click', () => {
     clicks++;
     counter.textContent = `点击: ${clicks} / 10`;
@@ -170,21 +144,16 @@ if ($('#terraria-btn')) {
     }
   };
 
-  btn.addEventListener('mousedown', (e) => {
+  btn.addEventListener('mousedown', e => {
     e.preventDefault();
     isHolding = true;
     requestAnimationFrame(updateHold);
   });
 
-  const stopHold = () => {
-    isHolding = false;
-  };
-
+  const stopHold = () => { isHolding = false; };
   window.addEventListener('mouseup', stopHold);
   window.addEventListener('mouseleave', stopHold);
-
-  // 移动端支持
-  btn.addEventListener('touchstart', (e) => {
+  btn.addEventListener('touchstart', e => {
     e.preventDefault();
     isHolding = true;
     requestAnimationFrame(updateHold);
@@ -194,7 +163,5 @@ if ($('#terraria-btn')) {
 
 // 颁奖页重启
 if ($('#restart-btn')) {
-  $('#restart-btn').addEventListener('click', () => {
-    goToPage('index.html');
-  });
+  $('#restart-btn')?.addEventListener('click', () => goToPage('index.html'));
 }
