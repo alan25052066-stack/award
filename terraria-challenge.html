@@ -3,26 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>泰拉瑞亚世界</title>
+  <title>第五关：泰拉瑞亚</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="images/hoshino-stage-bg.webp" as="image">
-  <link rel="preload" href="images/award-iron-butt.webp" as="image">
 </head>
-<body style="background-image: url('images/terraria-bg.webp');">
-  <section id="terraria-section" class="level-section">
+<body style="background-image: url('terraria-bg.png');">
+  <section class="level-section">
     <div class="level-content">
-      <h2>⛏️ 泰拉瑞亚世界</h2>
-      <div class="challenge-desc">
-        <p>击败史莱姆之王</p>
-        <button class="btn start-btn" onclick="document.querySelector('.challenge-desc').classList.add('hidden'); document.querySelector('.challenge-game').classList.remove('hidden')">开始挑战</button>
+      <h2>第五关：泰拉瑞亚</h2>
+      <p>长按击败史莱姆之王</p>
+      <button id="terraria-btn" class="btn">长按挖矿</button>
+      <div class="progress-bar">
+        <div id="terraria-progress"></div>
       </div>
-      <div class="challenge-game hidden">
-        <p>长按按钮挖矿（0.5秒）</p>
-        <button id="terraria-btn" class="game-btn hold-btn">长按挖矿</button>
-        <div class="progress-bar">
-          <div id="terraria-progress"></div>
-        </div>
-      </div>
+      <p class="hint">按住不放直到进度条满</p>
     </div>
   </section>
   <script src="script.js"></script>
