@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>火影忍者挑战</title>
+  <title>第一关：火影忍者</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="images/genshin-bg.webp" as="image">
 </head>
-<body style="background-image: url('images/naruto-bg.webp');">
-  <section id="naruto-section" class="level-section">
+<body style="background-image: url('naruto-bg.png');">
+  <section class="level-section">
     <div class="level-content">
-      <h2>火影忍者挑战</h2>
-      <div class="challenge-desc">
-        <p>完成5个任务，获得木叶护额！</p>
-        <button class="btn start-btn" onclick="document.querySelector('.challenge-desc').classList.add('hidden'); document.querySelector('.challenge-game').classList.remove('hidden')">开始挑战</button>
-      </div>
-      <div class="challenge-game hidden">
-        <p>快速点击按钮 20 次！</p>
-        <button id="naruto-btn" class="game-btn">连打！</button>
-        <div id="naruto-counter">连打: 0 / 20</div>
-      </div>
+      <h2>第一关：火影忍者</h2>
+      <p>疯狂点击按钮，连打20次！</p>
+      <button id="naruto-btn" class="btn">点我！</button>
+      <p id="naruto-counter">连打: 0 / 20</p>
     </div>
   </section>
   <script src="script.js"></script>
