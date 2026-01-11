@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>三角洲行动</title>
+  <title>第四关：三角洲行动</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="images/terraria-bg.webp" as="image">
 </head>
-<body style="background-image: url('images/delta-bg.webp');">
-  <section id="delta-section" class="level-section">
+<body style="background-image: url('delta-bg.png');">
+  <section class="level-section">
     <div class="level-content">
-      <h2>三角洲行动</h2>
-      <div class="challenge-desc">
-        <p>完成“黑鹰坠落”战役，营救所有干员！</p>
-        <button class="btn start-btn" onclick="document.querySelector('.challenge-desc').classList.add('hidden'); document.querySelector('.challenge-game').classList.remove('hidden')">开始挑战</button>
-      </div>
-      <div class="challenge-game hidden">
-        <p>疯狂点击按钮 10 次！</p>
-        <button id="delta-btn" class="game-btn">快点我！</button>
-        <div id="delta-counter">点击: 0 / 10</div>
-      </div>
+      <h2>第四关：三角洲行动</h2>
+      <p>快速点击10次执行任务！</p>
+      <button id="delta-btn" class="btn">执行！</button>
+      <p id="delta-counter">点击: 0 / 10</p>
     </div>
   </section>
   <script src="script.js"></script>
