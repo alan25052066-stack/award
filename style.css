@@ -59,11 +59,6 @@ p {
   transform: scale(1.05);
 }
 
-.hidden {
-  display: none !important;
-}
-
-/* 游戏区域 */
 .swipe-area {
   width: 200px;
   height: 100px;
