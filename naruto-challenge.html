@@ -3,18 +3,224 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>第一关：火影忍者</title>
+  <title>第一关：火影忍者 · 连打挑战</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 火影主题增强 */
+    body {
+      background-image: url('naruto-bg.png');
+    }
+
+    .level-section {
+      background: rgba(0, 0, 0, 0.75);
+      border: 3px solid #ff9900;
+      box-shadow: 0 0 20px rgba(255, 153, 0, 0.5);
+    }
+
+    h2 {
+      color: #ffcc00;
+      text-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+      font-family: "SimHei", "Microsoft YaHei", sans-serif;
+    }
+
+    /* 进度条样式 */
+    .progress-container {
+      width: 80%;
+      max-width: 400px;
+      height: 24px;
+      background: #222;
+      border-radius: 12px;
+      margin: 1.2rem auto;
+      overflow: hidden;
+      border: 2px solid #ff9900;
+    }
+
+    #naruto-progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(to right, #ff6600, #ffcc00);
+      transition: width 0.2s ease;
+    }
+
+    /* 按钮增强 */
+    #naruto-btn {
+      background: linear-gradient(to bottom, #ff9900, #ff6600);
+      border: 2px solid #ffcc00;
+      box-shadow: 0 4px 0 #cc5200;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transform: scale(1);
+      transition: transform 0.05s ease, background 0.1s;
+    }
+
+    #naruto-btn:active {
+      transform: scale(0.95);
+      box-shadow: 0 2px 0 #cc5200;
+    }
+
+    #naruto-btn:disabled {
+      background: #444 !important;
+      border-color: #666;
+      box-shadow: none;
+      transform: scale(1);
+    }
+
+    .counter-display {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 0.8rem;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    }
+
+    /* 庆祝粒子（完成时显示） */
+    .celebration {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 100;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .celebration.show {
+      opacity: 1;
+    }
+
+    .particle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: #ffcc00;
+      border-radius: 50%;
+      animation: float 2s forwards;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
 </head>
-<body style="background-image: url('naruto-bg.png');">
+<body>
   <section class="level-section">
     <div class="level-content">
       <h2>第一关：火影忍者</h2>
-      <p>疯狂点击按钮，连打20次！</p>
-      <button id="naruto-btn" class="btn">点我！</button>
-      <p id="naruto-counter">连打: 0 / 20</p>
+      <p>疯狂点击按钮，连打 20 次！<br><small style="color:#aaa;">（支持鼠标/触屏快速连点）</small></p>
+      
+      <button id="naruto-btn" class="btn">影分身之术！</button>
+      
+      <div class="progress-container">
+        <div id="naruto-progress-bar"></div>
+      </div>
+      
+      <div class="counter-display" id="naruto-counter">0 / 20</div>
     </div>
   </section>
+
+  <!-- 庆祝动画容器 -->
+  <div class="celebration" id="celebration"></div>
+
   <script src="script.js"></script>
+  <script>
+    // 本关专属逻辑（覆盖 script.js 中的基础逻辑）
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('naruto-btn');
+      const counter = document.getElementById('naruto-counter');
+      const progressBar = document.getElementById('naruto-progress-bar');
+      const celebration = document.getElementById('celebration');
+
+      if (!btn) return;
+
+      let count = 0;
+      const TARGET = 20;
+
+      // 快速点击处理（防止长按误触发）
+      btn.addEventListener('mousedown', e => {
+        e.preventDefault();
+        handleTap();
+      });
+
+      btn.addEventListener('touchstart', e => {
+        e.preventDefault();
+        handleTap();
+      });
+
+      function handleTap() {
+        if (count >= TARGET) return;
+        count++;
+        updateUI();
+
+        // 播放简单音效（可选，用 Web Audio API 模拟）
+        playClickSound();
+
+        if (count >= TARGET) {
+          completeChallenge();
+        }
+      }
+
+      function updateUI() {
+        const percent = (count / TARGET) * 100;
+        progressBar.style.width = `${percent}%`;
+        counter.textContent = `${count} / ${TARGET}`;
+      }
+
+      function playClickSound() {
+        // 极简“咔哒”音效（无需外部文件）
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.value = 800 + Math.random() * 200;
+          gain.gain.value = 0.1;
+          osc.start();
+          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.1);
+          osc.stop(ctx.currentTime + 0.1);
+        } catch (e) {
+          // 静音环境忽略
+        }
+      }
+
+      function completeChallenge() {
+        btn.disabled = true;
+        btn.textContent = '通灵成功！';
+
+        // 播放庆祝粒子
+        showCelebration();
+
+        // 延迟显示下一关按钮
+        setTimeout(() => {
+          const nextBtn = document.createElement('button');
+          nextBtn.className = 'btn';
+          nextBtn.textContent = '前往原神世界';
+          nextBtn.onclick = () => {
+            window.location.href = 'genshin-challenge.html';
+          };
+          btn.parentNode.appendChild(nextBtn);
+        }, 1000);
+      }
+
+      function showCelebration() {
+        celebration.classList.add('show');
+        for (let i = 0; i < 50; i++) {
+          const particle = document.createElement('div');
+          particle.className = 'particle';
+          particle.style.left = `${Math.random() * 100}%`;
+          particle.style.backgroundColor = i % 2 ? '#ffcc00' : '#ff6600';
+          particle.style.animationDelay = `${Math.random() * 1}s`;
+          particle.style.animationDuration = `${1.5 + Math.random()}s`;
+          celebration.appendChild(particle);
+
+          // 自动清理
+          setTimeout(() => particle.remove(), 2000);
+        }
+      }
+    });
+  </script>
 </body>
 </html>
