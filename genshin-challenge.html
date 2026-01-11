@@ -3,23 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>原神冒险</title>
+  <title>第二关：原神</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="images/cs2-bg.webp" as="image">
 </head>
-<body style="background-image: url('images/genshin-bg.webp');">
-  <section id="genshin-section" class="level-section">
+<body style="background-image: url('genshin-bg.png');">
+  <section class="level-section">
     <div class="level-content">
-      <h2>⚔️ 原神冒险</h2>
-      <div class="challenge-desc">
-        <p>探索提瓦特，击败深渊法师！</p>
-        <button class="btn start-btn" onclick="document.querySelector('.challenge-desc').classList.add('hidden'); document.querySelector('.challenge-game').classList.remove('hidden')">开始挑战</button>
-      </div>
-      <div class="challenge-game hidden">
-        <p>在区域内点击收集神瞳（5次）</p>
-        <div id="genshin-area" class="swipe-area"></div>
-        <div id="genshin-counter">已收集: 0 / 5</div>
-      </div>
+      <h2>第二关：原神</h2>
+      <p>点击区域收集神瞳！</p>
+      <div id="genshin-area" class="swipe-area"></div>
+      <p id="genshin-counter">已收集: 0 / 5</p>
     </div>
   </section>
   <script src="script.js"></script>
