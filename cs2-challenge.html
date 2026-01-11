@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>反恐精英行动</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="images/delta-bg.webp" as="image">
+</head>
+<body style="background-image: url('images/cs2-bg.webp');">
+  <section id="cs2-section" class="level-section">
+    <div class="level-content">
+      <h2>反恐精英行动</h2>
+      <div class="challenge-desc">
+        <p>赢得10局竞技模式！</p>
+        <button class="btn start-btn" onclick="document.querySelector('.challenge-desc').classList.add('hidden'); document.querySelector('.challenge-game').classList.remove('hidden')">开始挑战</button>
+      </div>
+      <div class="challenge-game hidden">
+        <p>拿起手机，用力摇晃！（需手机）</p>
+        <div id="cs2-shake">颠簸: 0 / 10</div>
+        <p class="hint">PC用户可点击下方模拟</p>
+        <button id="cs2-simulate" class="btn">模拟摇晃</button>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
